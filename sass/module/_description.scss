@@ -1,0 +1,17 @@
+@use "../global" as *;
+
+/*=========================================================
+# description
+=========================================================*/
+.description {
+  margin-top: 7rem;
+}
+
+.description__text {
+  display: flex;
+  font-size: 1.6rem;
+  justify-content: center;
+  letter-spacing: 0.15em;
+  line-height: calc(36 / 16);
+  text-align: center;
+}

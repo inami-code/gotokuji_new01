@@ -1,0 +1,106 @@
+@use "../global" as *;
+/*=========================================================
+# nav
+=========================================================*/
+
+.nav {
+	background-color: $gold;
+	bottom: 0;
+	content: "";
+	display: none;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+.nav.is-active {
+	display: block;
+}
+
+.nav__inner {
+	height: inherit;
+	width: inherit;
+}
+
+.nav__container {
+	height: inherit;
+	position: relative;
+	width: inherit;
+}
+
+.nav__img {
+	position: absolute;
+	transform: translate(-50%, -50%);
+  width: 822px;
+  top: 50%;
+  left: 50%;
+}
+
+.nav__img img {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.nav__items {
+	position: absolute;
+  top: 36%;
+  left: calc(50% - 75px);
+}
+
+.nav__item.nav__item--space {
+	margin-top: 20px;
+}
+
+.nav__item a {
+	display: block;
+  padding: 20px;
+}
+
+.nav__item a p {
+  font-size: 20px;
+	letter-spacing: 0.02em;
+	position: relative;
+	width: fit-content;
+}
+
+.nav__item a p::after {
+	background-color: $black;
+	bottom: -5px;
+	content: "";
+	height: 3px;
+	left: 0;
+	position: absolute;
+	transform: scale(0, 1);
+	transform-origin: right top;
+	transition: transform 0.5s;
+	width: 100%;
+}
+
+.nav__item a:hover p::after {
+	transform: scale(1, 1);
+	transform-origin: left top;
+}
+
+.nav__flex-wrap {
+	align-items: center;
+	display: flex;
+	gap: 15px;
+}
+
+.nav__link {
+	fill: $black;
+	height: 15px;
+	width: 19px;
+}
+
+.nav__link use {
+	display: block;
+	height: 100%;
+	object-fit: contain;
+	width: 100%;
+}

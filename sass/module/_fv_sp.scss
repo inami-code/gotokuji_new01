@@ -1,0 +1,41 @@
+@use "../global" as *;
+/*=========================================================
+# fv
+=========================================================*/
+.fv {
+	height: 350px;
+	width: 100%;
+}
+
+.fv__container {
+	height: 350px;
+	position: relative;
+}
+
+.fv__img {
+	height: 350px;
+	width: 100%;
+}
+
+.fv__img img {
+	display: block;
+	height: 350px;
+	object-fit: cover;
+	width: 100%;
+}
+
+.fv__logo {
+	bottom: 0;
+	left: 50%;
+	max-width: 200px;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+.fv__logo img {
+	display: block;
+	height: 100%;
+	object-fit: contain;
+	width: 100%;
+}

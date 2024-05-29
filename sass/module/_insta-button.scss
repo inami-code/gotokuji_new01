@@ -1,0 +1,43 @@
+@use "../global" as *;
+/*=========================================================
+# insta-button
+=========================================================*/
+.insta-button {
+	display: block;
+	margin-top: 20px;
+}
+
+.insta-button a {
+	background-image: url(../images/common/icon_insta.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	height: 4.7rem;
+	margin: 0 auto;
+	position: relative;
+	transition: background 0.3s;
+	width: 16.6rem;
+}
+
+.insta-button a:hover {
+	background-image: url(../images/common/icon_insta_hover.svg);
+}
+
+.insta-button a::after {
+	background-image: url(../images/common/icon_insta_hover-part.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 2.2rem;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transform: translateX(100%);
+	transition: opacity 0.3s;
+	width: 1.8rem;
+}
+
+.insta-button a:hover::after {
+	opacity: 1;
+}

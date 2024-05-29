@@ -1,0 +1,14 @@
+@use "sass:math";
+// 文字フォントの種類
+$base-font-family: "Noto Sans JP", sans-serif;
+$second-font-family: "Kaisei HarunoUmi", serif;
+
+// 文字の太さ
+$normal: 400;
+$bold: 700;
+
+body {
+  font-family: $base-font-family;
+  color: #000;
+  font-weight: $normal;
+}

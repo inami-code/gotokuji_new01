@@ -1,0 +1,125 @@
+@use "../global" as *;
+
+/*=========================================================
+# link-button
+=========================================================*/
+.link-button {
+  background-color: $red;
+  display: inline-block;
+}
+
+.link-button a {
+  align-items: center;
+  display: flex;
+  gap: 1.3rem;
+  padding: 1.4rem 4.3rem;
+  transition: transform 0.3s;
+}
+
+.link-button__text {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+}
+
+.link-button__arrow {
+  transition: transform 0.3s;
+  width: 3.1rem;
+}
+
+.link-button a:hover .link-button__arrow {
+  transform: translateX(30%);
+}
+
+.link-button__arrow img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+/*=========================================================
+# パターン02
+=========================================================*/
+
+.link-button02 {
+  background-color: $red;
+  display: inline-block;
+  transition: opacity 0.3s;
+}
+
+.link-button02:hover {
+  opacity: 0.7;
+}
+
+.link-button02 a {
+  align-items: center;
+  display: flex;
+  gap: 1.3rem;
+  padding: 1.4rem 4.3rem;
+  transition: transform 0.3s;
+}
+
+.link-button02__text {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+}
+
+.link-button02__arrow {
+  transition: transform 0.3s;
+  width: 3.1rem;
+}
+
+.link-button02__arrow img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+/*=========================================================
+# パターン03
+=========================================================*/
+
+.link-button03 {
+  background-color: $red;
+  display: inline-block;
+  left: 0;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.link-button03:hover {
+  box-shadow: 0 4px 8px rgba(255, 245, 157, 0.8);
+  left: 5px;
+}
+
+.link-button03 a {
+  align-items: center;
+  display: flex;
+  gap: 1.3rem;
+  padding: 1.4rem 4.3rem;
+  transition: transform 0.3s;
+}
+
+.link-button03__text {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: $bold;
+  letter-spacing: 0.05em;
+}
+
+.link-button03__arrow {
+  transition: transform 0.3s;
+  width: 3.1rem;
+}
+
+.link-button03__arrow img {
+  display: block;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
