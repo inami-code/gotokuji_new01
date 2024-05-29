@@ -1,40 +1,76 @@
 @use "../global" as *;
 @use "../global" as *;
+
 /*=========================================================
 # fv
 =========================================================*/
 .fv {
-  height: 700px;
+	height: 700px;
 	width: 100%;
 }
 
 .fv__container {
-  height: 700px;
+	height: 700px;
 	position: relative;
 }
 
 .fv__img {
-  height: 700px;
+	height: 700px;
 	width: 100%;
 }
 
 .fv__img img {
 	display: block;
-  height: 700px;
+	height: 700px;
 	object-fit: cover;
 	width: 100%;
 }
 
-.fv__logo {
+.fv__title {
+	position: absolute;
 	bottom: 0;
 	left: 50%;
-  max-width: 400px;
-	position: absolute;
+	max-width: 400px;
+	height: 180px;
 	transform: translateX(-50%);
 	width: 100%;
+	background-image: url(../../common/images/site_circle.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.fv__title-wrap {
+	position: relative;
+	width: inherit;
+	height: inherit;
+}
+
+.fv__logo {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	width: 263px;
 }
 
 .fv__logo img {
+	display: block;
+	height: 100%;
+	object-fit: contain;
+	width: 100%;
+}
+
+.fv__cat {
+	position: absolute;
+	content: "";
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 67px;
+}
+
+.fv__cat img {
 	display: block;
 	height: 100%;
 	object-fit: contain;

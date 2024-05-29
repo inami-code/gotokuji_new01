@@ -1,40 +1,9 @@
 @charset "UTF-8";
-body {
-  font-family: "Noto Sans JP", sans-serif;
-  color: #000;
-  font-weight: 400;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Noto Sans JP", sans-serif;
-  color: #000;
-  font-weight: 400;
-}
-
-a[href^="tel:"] {
-  pointer-events: none;
-}
-@media screen and (max-width: 768px) {
-  a[href^="tel:"] {
-    pointer-events: auto;
-  }
-}
-
-a {
-  transition: opacity 0.3s;
-}
-a:hover {
-  opacity: 0.7;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /* Remove default padding */
@@ -110,7 +79,8 @@ select {
 
 /* Blur images when they have no alt attribute */
 img:not([alt]) {
-  filter: blur(10px);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
 }
 
 /* フォームリセット */
@@ -147,4 +117,4 @@ select {
 
 select::-ms-expand {
   display: none;
-}
+}/*# sourceMappingURL=reset.css.map */

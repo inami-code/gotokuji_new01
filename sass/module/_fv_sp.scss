@@ -1,4 +1,5 @@
 @use "../global" as *;
+
 /*=========================================================
 # fv
 =========================================================*/
@@ -24,16 +25,51 @@
 	width: 100%;
 }
 
-.fv__logo {
+.fv__title {
+	position: absolute;
 	bottom: 0;
 	left: 50%;
 	max-width: 200px;
-	position: absolute;
+	height: 90px;
 	transform: translateX(-50%);
 	width: 100%;
+	background-image: url(../../common/images/site_circle.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.fv__title-wrap {
+	position: relative;
+	width: inherit;
+	height: inherit;
+}
+
+.fv__logo {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	width: 132px;
 }
 
 .fv__logo img {
+	display: block;
+	height: 100%;
+	object-fit: contain;
+	width: 100%;
+}
+
+.fv__cat {
+	position: absolute;
+	content: "";
+	top: -10px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 33.5px;
+}
+
+.fv__cat img {
 	display: block;
 	height: 100%;
 	object-fit: contain;

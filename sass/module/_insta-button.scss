@@ -8,7 +8,7 @@
 }
 
 .insta-button a {
-	background-image: url(../images/common/icon_insta.svg);
+	background-image: url(../../images/icon_insta.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	display: block;
@@ -20,11 +20,11 @@
 }
 
 .insta-button a:hover {
-	background-image: url(../images/common/icon_insta_hover.svg);
+	background-image: url(../../images/icon_insta_hover.svg);
 }
 
 .insta-button a::after {
-	background-image: url(../images/common/icon_insta_hover-part.svg);
+	background-image: url(../../images/icon_insta_hover-part.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";

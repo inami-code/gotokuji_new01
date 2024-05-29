@@ -8,29 +8,49 @@
   <meta name="robots" content="noindex" />
   <!-- meta情報 -->
   <title>ねこさんとおさんぽ 豪徳寺｜東京の豪徳寺周辺スイーツ・ショップ紹介サイト</title>
-  <meta name="description" content="" />
+  <meta name="description" content="東京都世田谷にある大谿山 豪徳寺までの参道（たまにゃん通り）に点在するスイーツやコーヒーショップ、グルメなどをご紹介しています。招き猫グッズの紹介も。" />
   <meta name="keywords" content="" />
   <!-- ogp -->
   <meta property="og:title" content="ねこさんとおさんぽ 豪徳寺｜東京の豪徳寺周辺スイーツ・ショップ紹介サイト" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://neko-goutokuji.tokyo/" />
+  <meta property="og:image" content="https://neko-goutokuji.tokyo/common/images/ogp.jpg" />
+  <meta property="og:site_name" content="ねこさんとおさんぽ 豪徳寺｜東京の豪徳寺周辺スイーツ・ショップ紹介サイト" />
+  <meta property="og:description"
+    content="東京都世田谷にある大谿山 豪徳寺までの参道（たまにゃん通り）に点在するスイーツやコーヒーショップ、グルメなどをご紹介しています。招き猫グッズの紹介も。" />
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@BnI1QoNzuPhOOIz" />
   <!-- ファビコン -->
-  <link rel="”icon”" href="" />
+  <link rel="icon" href="./common/images/favicon.ico">
+  <link rel="apple-touch-icon" href="./common/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./common/images/android-chrome-192x192.png">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
   <!-- css -->
-  <link rel="stylesheet" href="./css/common.css" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/site-common.css" />
+  <link rel="stylesheet" href="./css/site-common_sp.css" media="all and (max-width:767px)" />
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/index_sp.css" media="all and (max-width:767px)" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./common/libs/script.js"></script>
+  <!-- Googleサムネイル -->
+  <meta name="thumbnail" content="https://neko-goutokuji.tokyo/common/images/google-thumbnail.jpg">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-89QRX34WPM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-89QRX34WPM');
+  </script>
 </head>
 
 <body>
@@ -104,14 +124,22 @@
               <img src="./images/top_fv.png" alt="ねこさんとおさんぽ豪徳寺" width="1500" height="700" loading="lazy">
             </picture>
           </div>
-          <h1 class="fv__logo">
-            <picture>
-              <source srcset="./common/images/site_logo.webp" type="image/webp">
-              <img src="./common/images/site_logo.png" alt="ねこさんとおさんぽ豪徳寺" width="400" height="190"
-                loading="lazy">
-            </picture>
-          </h1>
-
+          <div class="fv__title">
+            <div class="fv__title-wrap">
+              <h1 class="fv__logo">
+                <picture>
+                  <source srcset="./common/images/site_logo.webp" type="image/webp">
+                  <img src="./common/images/site_logo.png" alt="ねこさんとおさんぽ豪徳寺" width="263" height="86" loading="lazy">
+                </picture>
+              </h1>
+              <div class="fv__cat">
+                <picture>
+                  <source srcset="./common/images/icon_cat.webp" type="image/webp">
+                  <img src="./common/images/icon_cat.png" alt="ねこさんとおさんぽ豪徳寺招き猫" width="67" height="71" loading="lazy">
+                </picture>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -127,12 +155,11 @@
       </div>
     </section>
 
-    <!-- <div class="link-button">
+    <div class="link-button">
       <a href="#">
         <p class="link-button__text">このエリアのお店を見る</p>
         <div class="link-button__arrow">
-          <img src="./images/icon_button-arrow.svg" alt="このエリアのお店を見る" width="33" height="33"
-            loading="lazy">
+          <img src="./common/images/icon_button-arrow.svg" alt="このエリアのお店を見る" width="33" height="33" loading="lazy">
         </div>
       </a>
     </div>
@@ -140,8 +167,7 @@
       <a href="#">
         <p class="link-button02__text">このエリアのお店を見る</p>
         <div class="link-button02__arrow">
-          <img src="./images/icon_button-arrow.svg" alt="このエリアのお店を見る" width="33" height="33"
-            loading="lazy">
+          <img src="./common/images/icon_button-arrow.svg" alt="このエリアのお店を見る" width="33" height="33" loading="lazy">
         </div>
       </a>
     </div>
@@ -149,8 +175,7 @@
       <a href="#">
         <p class="link-button03__text">このエリアのお店を見る</p>
         <div class="link-button03__arrow">
-          <img src="./images/icon_button-arrow.svg" alt="このエリアのお店を見る" width="33" height="33"
-            loading="lazy">
+          <img src="./common/images/icon_button-arrow.svg" alt="このエリアのお店を見る" width="33" height="33" loading="lazy">
         </div>
       </a>
     </div>
@@ -159,8 +184,8 @@
     <div class="insta-button">
       <a href="#">
       </a>
-    </div> -->
-    <div class="embedsocial-hashtag" data-ref="592c215281c8fccc76f2a62c4ece8c19a4550e0f"> <a class="feed-powered-by-es feed-powered-by-es-slider-img" href="https://embedsocial.com/social-media-aggregator/" target="_blank" title="Instagram widget"> <img src="https://embedsocial.com/cdn/images/embedsocial-icon.png" alt="EmbedSocial"> Instagram widget </a> </div> <script> (function(d, s, id) { var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/cdn/ht.js"; d.getElementsByTagName("head")[0].appendChild(js); }(document, "script", "EmbedSocialHashtagScript")); </script>
+    </div>
+
   </main>
   <footer class="footer">
     <div class="footer__inner">
@@ -168,7 +193,7 @@
         豪徳寺と招き猫が大好きで、多くの方に訪れてほしい、と願って作成しました。</p>
       <small class="footer__copyright">&copy;ねこさんとおさんぽ豪徳寺</small>
     </div>
-    
+
   </footer>
   <svg style="display:none;">
     <symbol id="icon-link" viewBox="0 0 19.75 14.91">
