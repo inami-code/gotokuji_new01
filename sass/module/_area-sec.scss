@@ -1,0 +1,142 @@
+@use "../global" as *;
+
+/*=========================================================
+# area-sec
+=========================================================*/
+.area-sec__inner.inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.area-sec__item.area-sec__item--top01 {
+  margin-top: 29rem;
+}
+
+.area-sec__item.area-sec__item--top02 {
+  margin-top: 30.3rem;
+}
+
+.area-sec__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(5px, 8vw, 121px);
+  margin-right: calc(50% - 50vw);
+}
+
+.area-sec__wrap.area-sec__wrap--reverse {
+  flex-direction: row-reverse;
+  margin-left: calc(50% - 50vw);
+  margin-right: auto;
+}
+
+.area-sec__left {
+  flex: 0 1 38%;
+  text-align: center;
+}
+
+.area-sec__title {
+  font-size: clamp(15px, 2vw, 30px);
+  letter-spacing: 0.05em;
+  padding: 1.05rem 0;
+  min-height: 7.3rem;
+  display: block;
+  place-content: center;
+  position: relative;
+}
+
+.area-sec__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1.2rem;
+  height: 7.3rem;
+  background-image: url(../../images/icon_left-parentheses.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.area-sec__title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1.2rem;
+  height: 7.3rem;
+  background-image: url(../../images/icon_right-parentheses.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.area-sec__text {
+  font-size: 1.5rem;
+  line-height: calc(30 / 15);
+  letter-spacing: 0.05em;
+  margin-top: 4.2rem;
+  text-align: justify;
+}
+
+.area-sec__button {
+  margin-top: 3.1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.area-sec__right {
+  flex: 0 1 62%;
+  position: relative;
+}
+
+.area-sec__right::after {
+  content: "";
+  position: absolute;
+  top: -110px;
+  right: 80px;
+  width: 13.6rem;
+  height: 11.3rem;
+  background-image: url(../../images/yamashita_cat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.area-sec__right.area-sec__right--syoutengai::after {
+  top: auto;
+  bottom: 7px;
+  right: -85px;
+  width: 9.1rem;
+  height: 14.1rem;
+  background-image: url(../../images/syoutengai_cat.png);
+}
+
+.area-sec__right.area-sec__right--gotokuji::after {
+  top: -140px;
+  right: auto;
+  left: -35px;
+  width: 21.7rem;
+  height: 17.7rem;
+  background-image: url(../../images/gotokuji_cat.png);
+}
+
+.area-sec__right img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-top-left-radius: 50px;
+}
+
+.area-sec__right.area-sec__right--syoutengai img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 50px;
+}
+
+.area-sec__sns {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 10.2rem;
+}

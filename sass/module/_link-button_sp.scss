@@ -5,19 +5,21 @@
 =========================================================*/
 .link-button {
   background-color: $red;
-  display: inline-block;
+  display: block;
+  max-width: 26rem;
+  width: 100%;
 }
 
 .link-button a {
   align-items: center;
   display: flex;
   gap: 1.3rem;
-  padding: 1.4rem 4.3rem;
+  padding: 1.4rem;
   transition: transform 0.3s;
 }
 
 .link-button__text {
-  color: #fff;
+  color: $white;
   font-size: 1.2rem;
   font-weight: $bold;
   letter-spacing: 0.05em;
@@ -62,7 +64,7 @@
 }
 
 .link-button02__text {
-  color: #fff;
+  color: $white;
   font-size: 1.2rem;
   font-weight: $bold;
   letter-spacing: 0.05em;
@@ -106,7 +108,7 @@
 }
 
 .link-button03__text {
-  color: #fff;
+  color: $white;
   font-size: 1.2rem;
   font-weight: $bold;
   letter-spacing: 0.05em;

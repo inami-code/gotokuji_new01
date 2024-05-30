@@ -1,0 +1,40 @@
+@use "../global" as *;
+
+/*=========================================================
+# map
+=========================================================*/
+.map__inner.inner{
+  max-width: 1068px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.map__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.0rem;
+}
+
+.map__title {
+  flex: 0 1 30%;
+
+}
+
+.map__title img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map__img {
+  flex: 0 1 70%;
+}
+
+.map__img img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

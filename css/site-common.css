@@ -125,7 +125,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 50%;
-  max-width: 400px;
+  max-width: 398px;
   height: 180px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -148,7 +148,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  width: 263px;
+  width: 266px;
 }
 
 .fv__logo img {
@@ -266,7 +266,9 @@ body {
 =========================================================*/
 .link-button {
   background-color: #b82e04;
-  display: inline-block;
+  display: block;
+  max-width: 36rem;
+  width: 100%;
 }
 
 .link-button a {
@@ -276,8 +278,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 1.3rem;
-  padding: 2.1rem 6rem;
+  padding: 2.1rem;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -286,7 +291,7 @@ body {
 
 .link-button__text {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: clamp(14px, 1vw, 16px);
   font-weight: 700;
   letter-spacing: 0.05em;
 }
@@ -296,7 +301,7 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
-  width: 4.9rem;
+  width: clamp(20px, 2.7vw, 49px);
 }
 
 .link-button a:hover .link-button__arrow {

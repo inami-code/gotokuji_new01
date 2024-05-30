@@ -124,7 +124,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 50%;
-  max-width: 200px;
+  max-width: 199px;
   height: 90px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -147,7 +147,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  width: 132px;
+  width: 133px;
 }
 
 .fv__logo img {
@@ -323,7 +323,9 @@ body {
 =========================================================*/
 .link-button {
   background-color: #b82e04;
-  display: inline-block;
+  display: block;
+  max-width: 26rem;
+  width: 100%;
 }
 
 .link-button a {
@@ -334,7 +336,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 1.3rem;
-  padding: 1.4rem 4.3rem;
+  padding: 1.4rem;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
