@@ -1,0 +1,36 @@
+@use "../global" as *;
+
+/*=========================================================
+# manekineko
+=========================================================*/
+
+.manekineko__item {
+  background-image: url(../../images/manekineko_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  padding-top: 7.4rem;
+  padding-bottom: 7rem;
+}
+
+.manekineko__item-img {
+  max-width: 119.3rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.manekineko__item-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.manekineko__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+}

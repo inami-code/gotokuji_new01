@@ -275,6 +275,43 @@ body {
 }
 
 /*=========================================================
+# manekineko
+=========================================================*/
+.manekineko__item {
+  background-image: url(../../images/manekineko_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  min-height: 23rem;
+  margin: 0 calc(50% - 50vw);
+  padding-top: 1.15em;
+  padding-bottom: 2.35rem;
+}
+
+.manekineko__item-img {
+  max-width: 119.3rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 0.95rem;
+  padding-right: 0.95rem;
+}
+
+.manekineko__item-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.manekineko__button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -30px;
+}
+
+/*=========================================================
 # top-map
 =========================================================*/
 .top-map {
@@ -282,8 +319,15 @@ body {
 }
 
 /*=========================================================
-# top-map
+# top-area
 =========================================================*/
 .top-area {
   margin-top: 8rem;
+}
+
+/*=========================================================
+# top-manekineko
+=========================================================*/
+.top-manekineko {
+  margin-top: 6.95rem;
 }/*# sourceMappingURL=index_sp.css.map */

@@ -41,6 +41,15 @@
   width: 100%;
 }
 
+/* black
+--------------------------------------------------*/
+.link-button.link-button--black {
+  background-color: $black;
+}
+.link-button.link-button--black .link-button__text {
+  color: $gold;
+  font-size: 1.2rem;
+}
 /*=========================================================
 # パターン02
 =========================================================*/

@@ -371,6 +371,17 @@ body {
   width: 100%;
 }
 
+/* black
+--------------------------------------------------*/
+.link-button.link-button--black {
+  background-color: #000;
+}
+
+.link-button.link-button--black .link-button__text {
+  color: #a49a74;
+  font-size: 1.2rem;
+}
+
 /*=========================================================
 # パターン02
 =========================================================*/
