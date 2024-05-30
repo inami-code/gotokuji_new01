@@ -290,6 +290,45 @@ body {
 }
 
 /*=========================================================
+# info
+=========================================================*/
+.info__head-img {
+  width: 100vw;
+  height: 500px;
+  margin: 0 calc(50% - 50vw);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info__head-img img {
+  display: block;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info__title {
+  font-family: "Kaisei HarunoUmi", serif;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8.1rem;
+  font-size: 4.8rem;
+  font-weight: 400;
+}
+
+.info__text {
+  text-align: center;
+  margin-top: 6.1rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.15em;
+  line-height: 2.25;
+}
+
+/*=========================================================
 # top-map
 =========================================================*/
 .top-map {
@@ -308,4 +347,12 @@ body {
 =========================================================*/
 .top-manekineko {
   margin-top: 18.3rem;
+}
+
+/*=========================================================
+/*=========================================================
+# top-info
+=========================================================*/
+.top-info {
+  margin-top: 15.6rem;
 }/*# sourceMappingURL=index.css.map */
