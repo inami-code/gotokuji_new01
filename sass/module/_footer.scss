@@ -5,25 +5,26 @@
 =========================================================*/
 .footer {
   background-color: $black;
-	padding-bottom: 6.4rem;
-	padding-top: 12.9rem;
+  padding-top: 5.4rem;
+  padding-bottom: 14.9rem;
 }
 
 .footer__inner {
-	padding: 0 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .footer__text {
-	font-feature-settings: "palt";
-	color: #a49a74;
-	font-size: 1.4rem;
-	letter-spacing: 0.15em;
+  font-feature-settings: "palt";
+  color: #a49a74;
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
   line-height: calc(30 / 14);
-	text-align: center;
+  font-feature-settings: "palt";
+  text-align: center;
 }
 
 .footer__text a {
-	position: relative;
+  position: relative;
 }
 
 .footer__text a::after {
@@ -33,7 +34,7 @@
   height: 1px;
   background-color: $gold;
   left: 0;
-  bottom: -3px;
+  bottom: -0.5rem;
   transform: scale(1, 1);
   transform-origin: left top;
   transition: transform .5s;
@@ -45,10 +46,11 @@
 }
 
 .footer__copyright {
-	display: block;
+  display: block;
   color: $gold;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
+  font-feature-settings: "palt";
   text-align: center;
-	margin-top: 5rem;
+  margin-top: 5rem;
 }

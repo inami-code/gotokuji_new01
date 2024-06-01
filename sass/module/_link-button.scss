@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   gap: 1.3rem;
-  padding: 2.1rem;
+  padding: 1.9rem;
   transition: transform 0.3s;
 }
 
@@ -23,13 +23,13 @@
   color: $white;
   font-size: clamp(14px, 1vw, 16px);
   font-weight: $bold;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 .link-button__arrow {
   transition: transform 0.3s;
-  width: clamp(20px, 2.7vw, 49px);
-  aspect-ratio: 33 / 33;
+  width: clamp(20px, 3.2666666666666666vw, 49px);
+  aspect-ratio: 49 / 18;
 }
 
 .link-button a:hover .link-button__arrow {
@@ -51,10 +51,10 @@
 }
 .link-button.link-button--black .link-button__text {
   color: $gold;
-  font-size: 1.6rem;
+  font-size: clamp(14px, 1vw, 16px);
 }
 .link-button.link-button--black .link-button__arrow{
-  width: 4.9rem;
+  width: clamp(20px, 3.2666666666666666vw, 49px);
 }
 
 

@@ -27,40 +27,53 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8.1rem;
+  margin-top: 7.7rem;
   font-size: 4.8rem;
+  letter-spacing: 0.15em;
   font-weight: $normal;
 }
 
 .info__text {
   text-align: center;
-  margin-top: 6.1rem;
+  margin-top: 4.1rem;
   font-size: 1.6rem;
   letter-spacing: 0.15em;
   line-height: calc(36 / 16);
+  font-feature-settings: "palt";
 }
 
 .info__items {
-  margin-top: 11.5rem;
+  margin-top: 13.3rem;
 }
 
 .info__content {
   position: relative;
+  padding-bottom: calc(80px - ((100 / 476) * (100vw - 1024px)));
+}
+
+.info__content.info__content--02{
+  padding-bottom: calc(90px - ((100 / 476) * (100vw - 1024px)));
 }
 
 .info__content-wrap {
   display: flex;
-  gap: clamp(30px, 4.866666666666666vw, 73px);
+  gap: clamp(30px, 5.066666666666666vw, 76px);
 }
 
 .info__content.info__content--02 .info__content-wrap {
   flex-direction: row-reverse;
-  margin-top: 8.0rem;
+  gap: clamp(30px, 5.333333333333333vw, 80px);
+  margin-top: 6.2rem;
 }
 
 .info__content-left {
-  flex: 0 1 65%;
-  margin-top: 2rem;
+  flex: 0 1 62.75%;
+  margin-top: 2.9rem;
+}
+
+.info__content.info__content--02 .info__content-left{
+  flex: 0 1 62.5%;
+  margin-top: 4.7rem;
 }
 
 .info__content-title {
@@ -68,17 +81,24 @@
   line-height: calc(48 / 24);
   letter-spacing: 0.05em;
   font-weight: $medium;
+  font-feature-settings: "palt";
 }
 
 .info__content-text {
   font-size: 1.6rem;
   line-height: calc(36 / 16);
-  margin-top: 3.1rem;
+  letter-spacing: 0.15em;
+  margin-top: 0.7rem;
+  font-feature-settings: "palt";
 }
 
 .info__content-right {
-  flex: 0 1 35%;
+  flex: 0 1 37.25%;
   aspect-ratio: 420 / 420;
+}
+
+.info__content.info__content--02 .info__content-right{
+  flex: 0 1 37.5%;
 }
 
 .info__content-right img {
@@ -94,14 +114,14 @@
   align-items: flex-end;
   gap: 3rem;
   position: absolute;
-  bottom: clamp(0rem, -12.5rem + 16.67vw, 3.125rem);
-  left: 35%;
+  bottom: 9rem;
+  left: 31.1%;
   transform: translateY(100%);
 }
 
 .info__item01-img {
   width: 29.2rem;
-  margin-bottom: 5.3rem;
+  margin-bottom: 4.8rem;
   aspect-ratio: 292 / 292;
 }
 
@@ -119,7 +139,7 @@
 .info__item01-right::after {
   position: absolute;
   content: "";
-  top: -70px;
+  top: -72px;
   left: -25px;
   width: 8rem;
   height: 6.2rem;
@@ -139,10 +159,13 @@
   font-size: 1.5rem;
   color: $gold;
   letter-spacing: 0.15em;
+  margin-top: 1rem;
+  font-feature-settings: "palt";
 }
 
 .info__item02 {
-  margin-top: 20rem;
+  margin-top: 21rem;
+  padding-left: 6rem;
 }
 
 .info__item02-img {
@@ -161,7 +184,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 2.7rem;
 }
 
 .info__content-link a {
@@ -175,7 +198,7 @@
   height: 1px;
   background-color: $red;
   left: 0;
-  bottom: -3px;
+  bottom: -0.5rem;
   transform: scale(1, 1);
   transform-origin: left top;
   transition: transform .5s;
@@ -191,6 +214,7 @@
   height: 15px;
   width: 19px;
   fill: $red;
+  margin-top: 5px;
 }
 
 .info__icon-img {
@@ -203,6 +227,8 @@
 
 .info__link-text {
   font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  font-feature-settings: "palt";
   color: $red;
 }
 
@@ -211,7 +237,8 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 1.5rem;
-  margin-top: calc(clamp(0rem, -50rem + 43.33vw, 16rem) * -1);
+  margin-top: -19.9rem;
+  padding-right: 52px;
 }
 
 .info__item03-wrap {
@@ -221,8 +248,8 @@
 .info__item03-wrap::before {
   position: absolute;
   content: "";
-  top: 80px;
-  left: -200px;
+  top: 116px;
+  left: -187px;
   width: 13.65rem;
   height: 19.1rem;
   background-image: url(../../images/info_img06.png);
@@ -244,13 +271,15 @@
 
 .info__item03-comment {
   position: relative;
+  margin-top: 1.8rem;
+  padding-left: 0.6rem;
 }
 
 .info__item03-comment::after {
   position: absolute;
   content: "";
-  top: -93px;
-  left: -38px;
+  top: -79px;
+  left: -31px;
   width: 3.6rem;
   height: 9.6rem;
   background-image: url(../../images/icon_arrow02.svg);
@@ -269,4 +298,6 @@
   font-size: 1.5rem;
   color: $gold;
   letter-spacing: 0.15em;
+  margin-top: 1rem;
+  font-feature-settings: "palt";
 }

@@ -37,4 +37,25 @@ jQuery(function ($) {
       });
     }
   });
+
+
+  $(document).ready(function () {
+    // mvHeightをイベントハンドラの外側で宣言
+    let fvHeight;
+  
+    $(window).on("scroll", function () {
+      fvHeight = $(".js-fv").height();
+      // ファーストビューの高さを取得
+      if ($(window).scrollTop() > fvHeight) {
+        // スクロールの位置がファーストビューより下の場合にclassを付与
+        $(".js-header").addClass("transform");
+        $(".js-hamburger").addClass("transform"); // hamburger spanの色を変える
+      } else {
+        // スクロールの位置がファーストビューより上の場合にclassを外す
+        $(".js-header").removeClass("transform");
+        $(".js-hamburger").removeClass("transform"); // hamburger spanの色を元に戻す
+      }
+    });
+  });
+  
 });

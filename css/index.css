@@ -53,7 +53,7 @@ body {
 # map
 =========================================================*/
 .map__inner.inner {
-  max-width: 1068px;
+  max-width: 1145px;
   width: 100%;
   margin: 0 auto;
 }
@@ -68,28 +68,29 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 6rem;
+  gap: 6.5rem;
 }
 
 .map__title {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 30%;
-          flex: 0 1 30%;
+      -ms-flex: 0 1 26%;
+          flex: 0 1 26%;
   aspect-ratio: 263/209;
+  margin-top: -86px;
 }
 
 .map__title img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .map__img {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 70%;
-          flex: 0 1 70%;
+      -ms-flex: 0 1 74%;
+          flex: 0 1 74%;
   aspect-ratio: 756/804;
 }
 
@@ -97,15 +98,15 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /*=========================================================
 # area-sec
 =========================================================*/
 .area-sec__inner.inner {
-  max-width: 1200px;
+  max-width: 1260px;
   width: 100%;
   margin: 0 auto;
 }
@@ -143,19 +144,22 @@ body {
 
 .area-sec__left {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 38%;
-          flex: 0 1 38%;
+      -ms-flex: 0 1 35.7%;
+          flex: 0 1 35.7%;
   text-align: center;
+  margin-top: -1.7rem;
 }
 
 .area-sec__title {
   font-size: clamp(15px, 2vw, 30px);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
   padding: 1.05rem 0;
   min-height: 7.3rem;
   display: block;
   place-content: center;
   position: relative;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 .area-sec__title::before {
@@ -187,21 +191,23 @@ body {
 .area-sec__text {
   font-size: 1.5rem;
   line-height: 2;
-  letter-spacing: 0.05em;
-  margin-top: 4.2rem;
-  text-align: justify;
+  letter-spacing: 0.045em;
+  margin-top: 3.3rem;
+  text-align: left;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 .area-sec__button {
-  margin-top: 3.1rem;
+  margin-top: 4.1rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 .area-sec__right {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 62%;
-          flex: 0 1 62%;
+      -ms-flex: 0 1 64.3%;
+          flex: 0 1 64.3%;
   position: relative;
 }
 
@@ -215,14 +221,14 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 80px;
 }
 
 .area-sec__right::after {
   content: "";
   position: absolute;
-  top: -110px;
-  right: 80px;
+  top: -105px;
+  right: 87px;
   width: 13.6rem;
   height: 11.3rem;
   background-image: url(../../images/yamashita_cat.png);
@@ -232,17 +238,17 @@ body {
 
 .area-sec__right.area-sec__right--syoutengai::after {
   top: auto;
-  bottom: 7px;
-  right: -85px;
+  bottom: 0;
+  right: -84px;
   width: 9.1rem;
   height: 14.1rem;
   background-image: url(../../images/syoutengai_cat.png);
 }
 
 .area-sec__right.area-sec__right--gotokuji::after {
-  top: -140px;
+  top: -138px;
   right: auto;
-  left: -35px;
+  left: -16px;
   width: 21.7rem;
   height: 17.7rem;
   background-image: url(../../images/gotokuji_cat.png);
@@ -250,14 +256,19 @@ body {
 
 .area-sec__right.area-sec__right--syoutengai .area-sec__img img {
   border-top-left-radius: 0;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 80px;
 }
 
 .area-sec__sns {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  margin-top: 10.2rem;
+  margin-top: 4rem;
+}
+
+.area-sec__insta {
+  margin-top: 1.5rem;
+  padding-left: 3rem;
 }
 
 /*=========================================================
@@ -269,17 +280,17 @@ body {
   background-size: cover;
   width: 100vw;
   margin: 0 calc(50% - 50vw);
-  padding-top: 7.4rem;
-  padding-bottom: 7rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .manekineko__item-img {
-  max-width: 119.3rem;
   width: 100%;
+  max-width: 125.5rem;
   margin: 0 auto;
   padding-left: 3rem;
   padding-right: 3rem;
-  aspect-ratio: 1193/345;
+  aspect-ratio: 1195.5/345;
 }
 
 .manekineko__item-img img {
@@ -293,7 +304,7 @@ body {
 .manekineko__button {
   margin-left: auto;
   margin-right: auto;
-  margin-top: -30px;
+  margin-top: -3.1rem;
 }
 
 /*=========================================================
@@ -327,32 +338,40 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 8.1rem;
+  margin-top: 7.7rem;
   font-size: 4.8rem;
+  letter-spacing: 0.15em;
   font-weight: 400;
 }
 
 .info__text {
   text-align: center;
-  margin-top: 6.1rem;
+  margin-top: 4.1rem;
   font-size: 1.6rem;
   letter-spacing: 0.15em;
   line-height: 2.25;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 .info__items {
-  margin-top: 11.5rem;
+  margin-top: 13.3rem;
 }
 
 .info__content {
   position: relative;
+  padding-bottom: calc(80px - 0.2100840336 * (100vw - 1024px));
+}
+
+.info__content.info__content--02 {
+  padding-bottom: calc(90px - 0.2100840336 * (100vw - 1024px));
 }
 
 .info__content-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: clamp(30px, 4.8666666667vw, 73px);
+  gap: clamp(30px, 5.0666666667vw, 76px);
 }
 
 .info__content.info__content--02 .info__content-wrap {
@@ -360,14 +379,22 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  margin-top: 8rem;
+  gap: clamp(30px, 5.3333333333vw, 80px);
+  margin-top: 6.2rem;
 }
 
 .info__content-left {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 65%;
-          flex: 0 1 65%;
-  margin-top: 2rem;
+      -ms-flex: 0 1 62.75%;
+          flex: 0 1 62.75%;
+  margin-top: 2.9rem;
+}
+
+.info__content.info__content--02 .info__content-left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 62.5%;
+          flex: 0 1 62.5%;
+  margin-top: 4.7rem;
 }
 
 .info__content-title {
@@ -375,19 +402,30 @@ body {
   line-height: 2;
   letter-spacing: 0.05em;
   font-weight: 500;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 .info__content-text {
   font-size: 1.6rem;
   line-height: 2.25;
-  margin-top: 3.1rem;
+  letter-spacing: 0.15em;
+  margin-top: 0.7rem;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 .info__content-right {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 35%;
-          flex: 0 1 35%;
+      -ms-flex: 0 1 37.25%;
+          flex: 0 1 37.25%;
   aspect-ratio: 420/420;
+}
+
+.info__content.info__content--02 .info__content-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 37.5%;
+          flex: 0 1 37.5%;
 }
 
 .info__content-right img {
@@ -408,15 +446,15 @@ body {
           align-items: flex-end;
   gap: 3rem;
   position: absolute;
-  bottom: clamp(0rem, -12.5rem + 16.67vw, 3.125rem);
-  left: 35%;
+  bottom: 9rem;
+  left: 31.1%;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
 
 .info__item01-img {
   width: 29.2rem;
-  margin-bottom: 5.3rem;
+  margin-bottom: 4.8rem;
   aspect-ratio: 292/292;
 }
 
@@ -435,7 +473,7 @@ body {
 .info__item01-right::after {
   position: absolute;
   content: "";
-  top: -70px;
+  top: -72px;
   left: -25px;
   width: 8rem;
   height: 6.2rem;
@@ -455,10 +493,14 @@ body {
   font-size: 1.5rem;
   color: #a49a74;
   letter-spacing: 0.15em;
+  margin-top: 1rem;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 .info__item02 {
-  margin-top: 20rem;
+  margin-top: 21rem;
+  padding-left: 6rem;
 }
 
 .info__item02-img {
@@ -482,7 +524,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
-  margin-top: 3rem;
+  margin-top: 2.7rem;
 }
 
 .info__content-link a {
@@ -496,7 +538,7 @@ body {
   height: 1px;
   background-color: #b82e04;
   left: 0;
-  bottom: -3px;
+  bottom: -0.5rem;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   -webkit-transform-origin: left top;
@@ -518,6 +560,7 @@ body {
   height: 15px;
   width: 19px;
   fill: #b82e04;
+  margin-top: 5px;
 }
 
 .info__icon-img {
@@ -530,6 +573,9 @@ body {
 
 .info__link-text {
   font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
   color: #b82e04;
 }
 
@@ -545,7 +591,8 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   gap: 1.5rem;
-  margin-top: calc(clamp(0rem, -50rem + 43.33vw, 16rem) * -1);
+  margin-top: -19.9rem;
+  padding-right: 52px;
 }
 
 .info__item03-wrap {
@@ -555,8 +602,8 @@ body {
 .info__item03-wrap::before {
   position: absolute;
   content: "";
-  top: 80px;
-  left: -200px;
+  top: 116px;
+  left: -187px;
   width: 13.65rem;
   height: 19.1rem;
   background-image: url(../../images/info_img06.png);
@@ -579,13 +626,15 @@ body {
 
 .info__item03-comment {
   position: relative;
+  margin-top: 1.8rem;
+  padding-left: 0.6rem;
 }
 
 .info__item03-comment::after {
   position: absolute;
   content: "";
-  top: -93px;
-  left: -38px;
+  top: -79px;
+  left: -31px;
   width: 3.6rem;
   height: 9.6rem;
   background-image: url(../../images/icon_arrow02.svg);
@@ -604,20 +653,23 @@ body {
   font-size: 1.5rem;
   color: #a49a74;
   letter-spacing: 0.15em;
+  margin-top: 1rem;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 /*=========================================================
 # top-map
 =========================================================*/
 .top-map {
-  margin-top: 11rem;
+  margin-top: 12.6rem;
 }
 
 /*=========================================================
 # top-area
 =========================================================*/
 .top-area {
-  margin-top: 10.7rem;
+  margin-top: 10.6rem;
 }
 
 /*=========================================================
@@ -632,12 +684,12 @@ body {
 # top-info
 =========================================================*/
 .top-info {
-  margin-top: 15.6rem;
+  margin-top: 20.5rem;
 }
 
 /*=========================================================
 # top-footer
 =========================================================*/
 .top-footer {
-  margin-top: 18.3rem;
+  margin-top: 19.6rem;
 }/*# sourceMappingURL=index.css.map */

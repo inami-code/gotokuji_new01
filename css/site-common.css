@@ -10,7 +10,7 @@ body {
   margin-right: auto;
   padding-left: 30px;
   padding-right: 30px;
-  max-width: 1500px;
+  max-width: 1260px;
   width: 100%;
 }
 
@@ -18,7 +18,7 @@ body {
 # description
 =========================================================*/
 .description {
-  margin-top: 7rem;
+  margin-top: 5.8rem;
 }
 
 .description__text {
@@ -32,6 +32,8 @@ body {
   letter-spacing: 0.15em;
   line-height: 2.25;
   text-align: center;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 /*=========================================================
@@ -39,8 +41,8 @@ body {
 =========================================================*/
 .footer {
   background-color: #000;
-  padding-bottom: 6.4rem;
-  padding-top: 12.9rem;
+  padding-top: 5.4rem;
+  padding-bottom: 14.9rem;
 }
 
 .footer__inner {
@@ -54,6 +56,7 @@ body {
   font-size: 1.4rem;
   letter-spacing: 0.15em;
   line-height: 2.1428571429;
+  font-feature-settings: "palt";
   text-align: center;
 }
 
@@ -68,7 +71,7 @@ body {
   height: 1px;
   background-color: #a49a74;
   left: 0;
-  bottom: -3px;
+  bottom: -0.5rem;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
   -webkit-transform-origin: left top;
@@ -91,6 +94,8 @@ body {
   color: #a49a74;
   font-size: 1.2rem;
   letter-spacing: 0.1em;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
   text-align: center;
   margin-top: 5rem;
 }
@@ -164,7 +169,7 @@ body {
 .fv__cat {
   position: absolute;
   content: "";
-  top: -10px;
+  top: -17px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -191,6 +196,7 @@ body {
 }
 
 .hamburger span {
+  display: block;
   background-color: #fff;
   border-radius: 1rem;
   height: 0.35rem;
@@ -201,9 +207,13 @@ body {
   width: inherit;
 }
 
+.hamburger.js-hamburger.transform span {
+  background-color: rgb(0, 0, 0); /* 背景色変更 */
+}
+
 .hamburger span:nth-child(1) {
   top: 0;
-  width: 3.8rem;
+  width: 3.9rem;
 }
 
 .hamburger span:nth-child(2) {
@@ -214,7 +224,7 @@ body {
 
 .hamburger span:nth-child(3) {
   bottom: 0;
-  width: 2.5rem;
+  width: 2.7rem;
 }
 
 .hamburger.is-active span {
@@ -285,7 +295,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1.3rem;
-  padding: 2.1rem;
+  padding: 1.9rem;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
@@ -296,7 +306,7 @@ body {
   color: #fff;
   font-size: clamp(14px, 1vw, 16px);
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 .link-button__arrow {
@@ -304,8 +314,8 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
-  width: clamp(20px, 2.7vw, 49px);
-  aspect-ratio: 33/33;
+  width: clamp(20px, 3.2666666667vw, 49px);
+  aspect-ratio: 49/18;
 }
 
 .link-button a:hover .link-button__arrow {
@@ -329,11 +339,11 @@ body {
 
 .link-button.link-button--black .link-button__text {
   color: #a49a74;
-  font-size: 1.6rem;
+  font-size: clamp(14px, 1vw, 16px);
 }
 
 .link-button.link-button--black .link-button__arrow {
-  width: 4.9rem;
+  width: clamp(20px, 3.2666666667vw, 49px);
 }
 
 /*=========================================================

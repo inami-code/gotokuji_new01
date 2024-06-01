@@ -372,6 +372,11 @@ body {
 
 .info__content {
   position: relative;
+  padding-bottom: 0;
+}
+
+.info__content.info__content--02 {
+  padding-bottom: 0;
 }
 
 .info__content-wrap {
