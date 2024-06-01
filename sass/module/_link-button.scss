@@ -29,6 +29,7 @@
 .link-button__arrow {
   transition: transform 0.3s;
   width: clamp(20px, 2.7vw, 49px);
+  aspect-ratio: 33 / 33;
 }
 
 .link-button a:hover .link-button__arrow {
@@ -89,6 +90,7 @@
 .link-button02__arrow {
   transition: transform 0.3s;
   width: 4.9rem;
+  aspect-ratio: 33 / 33;
 }
 
 .link-button02__arrow img {
@@ -133,6 +135,7 @@
 .link-button03__arrow {
   transition: transform 0.3s;
   width: 4.9rem;
+  aspect-ratio: 33 / 33;
 }
 
 .link-button03__arrow img {

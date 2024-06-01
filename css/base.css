@@ -21,12 +21,4 @@ a[href^="tel:"] {
   a[href^="tel:"] {
     pointer-events: auto;
   }
-}
-
-a {
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
-}
-a:hover {
-  opacity: 0.7;
 }/*# sourceMappingURL=base.css.map */

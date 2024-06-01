@@ -93,13 +93,13 @@
   gap: 15px;
 }
 
-.nav__link {
+.nav__icon {
   fill: $black;
   height: 15px;
   width: 19px;
 }
 
-.nav__link use {
+.nav__link{
   display: block;
   height: 100%;
   object-fit: contain;

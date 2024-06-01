@@ -74,6 +74,7 @@ body {
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
   width: 50%;
+  aspect-ratio: 263/209;
 }
 
 .map__title img {
@@ -91,6 +92,7 @@ body {
   width: 100vw;
   margin-left: calc(50% - 50VW);
   margin-right: calc(50% - 50VW);
+  aspect-ratio: 756/804;
 }
 
 .map__img img {
@@ -216,6 +218,19 @@ body {
   padding-left: 3rem;
 }
 
+.area-sec__img {
+  aspect-ratio: 790/527;
+}
+
+.area-sec__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-top-left-radius: 50px;
+}
+
 .area-sec__right::after {
   content: "";
   position: absolute;
@@ -253,16 +268,7 @@ body {
   background-image: url(../../images/gotokuji_cat.png);
 }
 
-.area-sec__right img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-top-left-radius: 50px;
-}
-
-.area-sec__right.area-sec__right--syoutengai img {
+.area-sec__right.area-sec__right--syoutengai .area-sec__img img {
   border-top-left-radius: 0;
   border-top-right-radius: 50px;
 }
@@ -282,7 +288,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  min-height: 23rem;
+  height: 23rem;
   margin: 0 calc(50% - 50vw);
   padding-top: 1.15em;
   padding-bottom: 2.35rem;
@@ -295,6 +301,7 @@ body {
   margin: 0 auto;
   padding-left: 0.95rem;
   padding-right: 0.95rem;
+  aspect-ratio: 1193/345;
 }
 
 .manekineko__item-img img {
@@ -314,6 +321,335 @@ body {
 /*=========================================================
 # info
 =========================================================*/
+.info {
+  position: relative;
+}
+
+.info__head-img {
+  width: 100vw;
+  height: 250px;
+  margin: 0 calc(50% - 50vw);
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1500/500;
+}
+
+.info__head-img img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info__title {
+  font-family: "Kaisei HarunoUmi", serif;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4.05rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.info__text {
+  text-align: justify;
+  margin-top: 3.05rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.3rem;
+  letter-spacing: 0.15em;
+  line-height: 2.0769230769;
+  width: 90%;
+}
+
+.info__items {
+  margin-top: 2.25rem;
+}
+
+.info__content {
+  position: relative;
+}
+
+.info__content-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info__content.info__content--02 .info__content-wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 9.05rem;
+}
+
+.info__content-left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 65%;
+          flex: 0 1 65%;
+  margin-top: 0;
+}
+
+.info__content-title {
+  font-size: 1.5rem;
+  line-height: 2;
+  letter-spacing: 0.05em;
+}
+
+.info__content-text {
+  font-size: 1.3rem;
+  line-height: 1.9230769231;
+  margin-top: 1.5rem;
+}
+
+.info__content-right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
+  aspect-ratio: 420/420;
+  width: 60%;
+  margin-left: auto;
+}
+
+.info__content.info__content--02 .info__content-wrap .info__content-right {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.info__content-right img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 20px;
+}
+
+.info__item01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.4rem;
+  position: static;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  margin-top: 4.5rem;
+}
+
+.info__item01-img {
+  width: 17.5rem;
+  margin-bottom: 0;
+  aspect-ratio: 292/292;
+}
+
+.info__item01-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.info__item01-right {
+  position: relative;
+  padding-left: 4rem;
+}
+
+.info__item01-right::after {
+  position: absolute;
+  content: "";
+  top: -22px;
+  left: 139px;
+  width: 5rem;
+  height: 3.9rem;
+  background-image: url(../../images/icon_arrow01.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.info__item01-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #a49a74;
+  letter-spacing: 0.05em;
+}
+
+.info__item01-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #a49a74;
+  letter-spacing: 0.15em;
+}
+
+.info__item02 {
+  margin-top: 4rem;
+}
+
+.info__item02-img {
+  width: 20rem;
+  aspect-ratio: 328/155;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info__item02-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.info__content-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6rem;
+  margin-top: 3rem;
+}
+
+.info__content-link a {
+  position: relative;
+}
+
+.info__content-link a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #b82e04;
+  left: 0;
+  bottom: -3px;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.info__content-link a:hover::after {
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+.info__icon {
+  height: 9.5px;
+  width: 14px;
+  fill: #b82e04;
+}
+
+.info__icon-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.info__link-text {
+  font-size: 1.3rem;
+  color: #b82e04;
+}
+
+.info__item03 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1.5rem;
+  margin-top: 2.65rem;
+}
+
+.info__item03-wrap {
+  position: relative;
+}
+
+.info__item03-wrap::before {
+  position: absolute;
+  content: "";
+  top: 129px;
+  left: -130px;
+  width: 8.25em;
+  height: 11.7rem;
+  background-image: url(../../images/info_img06.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.info__item03-img {
+  width: 17.5rem;
+  aspect-ratio: 292/292;
+}
+
+.info__item03-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.info__item03-comment {
+  position: relative;
+}
+
+.info__item03-comment::after {
+  position: absolute;
+  content: "";
+  top: -50px;
+  left: -28px;
+  width: 2.15rem;
+  height: 6.05rem;
+  background-image: url(../../images/icon_arrow02.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.info__item03-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #a49a74;
+  letter-spacing: 0.05em;
+}
+
+.info__item03-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #a49a74;
+  letter-spacing: 0.15em;
+}
+
 /*=========================================================
 # top-map
 =========================================================*/
@@ -340,4 +676,11 @@ body {
 =========================================================*/
 .top-info {
   margin-top: 6.95rem;
+}
+
+/*=========================================================
+# top-footer
+=========================================================*/
+.top-footer {
+  margin-top: 8.3rem;
 }/*# sourceMappingURL=index_sp.css.map */

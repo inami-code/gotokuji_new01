@@ -5,8 +5,8 @@
 # fv
 =========================================================*/
 .fv {
-	height: 700px;
 	width: 100%;
+	height: 700px;
 }
 
 .fv__container {
@@ -15,8 +15,9 @@
 }
 
 .fv__img {
-	height: 700px;
 	width: 100%;
+	height: 700px;
+	aspect-ratio: 1500 / 700;
 }
 
 .fv__img img {
@@ -52,6 +53,7 @@
 	left: 50%;
 	transform: translate(-50%);
 	width: 266px;
+	aspect-ratio: 266 / 94;
 }
 
 .fv__logo img {
@@ -68,6 +70,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 	width: 67px;
+	aspect-ratio: 67 / 71;
 }
 
 .fv__cat img {

@@ -9,7 +9,7 @@
 
 .info__head-img {
   width: 100vw;
-  height: 250px;
+  height: 500px;
   margin: 0 calc(50% - 50vw);
   object-fit: cover;
   aspect-ratio: 1500 / 500;
@@ -18,7 +18,6 @@
 .info__head-img img {
   display: block;
   width: 100%;
-  height: 250px;
   object-fit: cover;
 }
 
@@ -28,24 +27,21 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4.05rem;
-  font-size: 2.4rem;
+  margin-top: 8.1rem;
+  font-size: 4.8rem;
   font-weight: $normal;
 }
 
 .info__text {
-  text-align: justify;
-  margin-top: 3.05rem;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 6.1rem;
+  font-size: 1.6rem;
   letter-spacing: 0.15em;
-  line-height: calc(27 / 13);
-  width: 90%;
+  line-height: calc(36 / 16);
 }
 
 .info__items {
-  margin-top: 2.25rem;
+  margin-top: 11.5rem;
 }
 
 .info__content {
@@ -60,24 +56,24 @@
 
 .info__content.info__content--02 .info__content-wrap {
   flex-direction: column;
-  margin-top: 9.05rem;
+  margin-top: 8.0rem;
 }
 
 .info__content-left {
   flex: 0 1 65%;
-  margin-top: 0;
+  margin-top: 2rem;
 }
 
 .info__content-title {
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   line-height: calc(48 / 24);
   letter-spacing: 0.05em;
 }
 
 .info__content-text {
-  font-size: 1.3rem;
-  line-height: calc(25 / 13);
-  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  line-height: calc(36 / 16);
+  margin-top: 3.1rem;
 }
 
 .info__content-right {
@@ -87,7 +83,7 @@
   margin-left: auto;
 }
 
-.info__content.info__content--02 .info__content-wrap .info__content-right{
+.info__content.info__content--02 .info__content-wrap .info__content-right {
   margin-right: auto;
   margin-left: 0;
 }
@@ -102,17 +98,16 @@
 
 .info__item01 {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 1.4rem;
+  align-items: flex-end;
+  gap: 3rem;
   position: static;
   transform: translateY(0);
   margin-top: 4.5rem;
 }
 
 .info__item01-img {
-  width: 17.5rem;
-  margin-bottom: 0;
+  width: 29.2rem;
+  margin-bottom: 5.3rem;
   aspect-ratio: 292 / 292;
 }
 
@@ -125,31 +120,29 @@
 
 .info__item01-right {
   position: relative;
-  padding-left: 4rem;
 }
 
 .info__item01-right::after {
   position: absolute;
   content: "";
-  top: -22px;
-  left: 139px;
-  width: 5rem;
-  height: 3.9rem;
+  top: -70px;
+  left: -25px;
+  width: 8rem;
+  height: 6.2rem;
   background-image: url(../../images/icon_arrow01.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .info__item01-title {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: $bold;
   color: $gold;
   letter-spacing: 0.05em;
 }
 
 .info__item01-text {
-  font-size: 1.2rem;
-  line-height: calc(18 / 12);
+  font-size: 1.5rem;
   color: $gold;
   letter-spacing: 0.15em;
 }
@@ -159,7 +152,7 @@
 }
 
 .info__item02-img {
-  width: 20rem;
+  width: 32.8rem;
   aspect-ratio: 328 / 155;
   margin-left: auto;
   margin-right: auto;
@@ -175,7 +168,7 @@
 .info__content-link {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 1rem;
   margin-top: 3rem;
 }
 
@@ -202,20 +195,20 @@
 }
 
 .info__icon {
-  height: 9.5px;
-  width: 14px;
+  height: 15px;
+  width: 19px;
   fill: $red;
 }
 
 .info__icon-img {
   display: block;
-  width: 100%;
   height: 100%;
   object-fit: contain;
+  width: 100%;
 }
 
 .info__link-text {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   color: $red;
 }
 
@@ -224,27 +217,27 @@
   flex-direction: column;
   align-items: flex-end;
   gap: 1.5rem;
-  margin-top: 2.65rem;
+  margin-top: 5.3rem;
 }
 
-.info__item03-wrap{
+.info__item03-wrap {
   position: relative;
 }
 
-.info__item03-wrap::before{
+.info__item03-wrap::before {
   position: absolute;
   content: "";
-  top: 129px;
-  left: -130px;
-  width: 8.25em;
-  height: 11.7rem;
+  top: 80px;
+  left: -200px;
+  width: 13.65rem;
+  height: 19.1rem;
   background-image: url(../../images/info_img06.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .info__item03-img {
-  width: 17.5rem;
+  width: 29.2rem;
   aspect-ratio: 292 / 292;
 }
 
@@ -262,25 +255,24 @@
 .info__item03-comment::after {
   position: absolute;
   content: "";
-  top: -50px;
-  left: -28px;
-  width: 2.15rem;
-  height: 6.05rem;
+  top: -93px;
+  left: -38px;
+  width: 3.6rem;
+  height: 9.6rem;
   background-image: url(../../images/icon_arrow02.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .info__item03-title {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: $bold;
   color: $gold;
   letter-spacing: 0.05em;
 }
 
 .info__item03-text {
-  font-size: 1.2rem;
-  line-height: calc(18 / 12);
+  font-size: 1.5rem;
   color: $gold;
   letter-spacing: 0.15em;
 }

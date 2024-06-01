@@ -32,6 +32,7 @@
   margin-right: auto;
   gap: 5.6rem;
 }
+
 .area-sec__wrap.area-sec__wrap--gotokuji {
   gap: 11.5rem;
 }
@@ -98,6 +99,18 @@
   padding-left: 3rem;
 }
 
+.area-sec__img {
+  aspect-ratio: 790 / 527;
+}
+
+.area-sec__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-top-left-radius: 50px;
+}
+
 .area-sec__right::after {
   content: "";
   position: absolute;
@@ -109,7 +122,8 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-.area-sec__right.area-sec__right--syoutengai{
+
+.area-sec__right.area-sec__right--syoutengai {
   margin-right: auto;
   margin-left: calc(50% - 50vw);
   padding-right: 3rem;
@@ -134,15 +148,7 @@
   background-image: url(../../images/gotokuji_cat.png);
 }
 
-.area-sec__right img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-top-left-radius: 50px;
-}
-
-.area-sec__right.area-sec__right--syoutengai img {
+.area-sec__right.area-sec__right--syoutengai .area-sec__img img {
   border-top-left-radius: 0;
   border-top-right-radius: 50px;
 }

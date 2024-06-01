@@ -91,6 +91,18 @@
   position: relative;
 }
 
+.area-sec__img {
+  aspect-ratio: 790 / 527;
+}
+
+.area-sec__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-top-left-radius: 50px;
+}
+
 .area-sec__right::after {
   content: "";
   position: absolute;
@@ -121,15 +133,7 @@
   background-image: url(../../images/gotokuji_cat.png);
 }
 
-.area-sec__right img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-top-left-radius: 50px;
-}
-
-.area-sec__right.area-sec__right--syoutengai img {
+.area-sec__right.area-sec__right--syoutengai .area-sec__img img {
   border-top-left-radius: 0;
   border-top-right-radius: 50px;
 }

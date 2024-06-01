@@ -8,8 +8,8 @@ body {
 .inner {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 33px;
-  padding-right: 33px;
+  padding-left: 15.5px;
+  padding-right: 15.5px;
   width: 100%;
 }
 
@@ -98,8 +98,8 @@ body {
 # fv
 =========================================================*/
 .fv {
-  height: 350px;
   width: 100%;
+  height: 350px;
 }
 
 .fv__container {
@@ -108,8 +108,9 @@ body {
 }
 
 .fv__img {
-  height: 350px;
   width: 100%;
+  height: 350px;
+  aspect-ratio: 1500/700;
 }
 
 .fv__img img {
@@ -148,6 +149,7 @@ body {
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
   width: 133px;
+  aspect-ratio: 266/94;
 }
 
 .fv__logo img {
@@ -166,6 +168,7 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 33.5px;
+  aspect-ratio: 67/71;
 }
 
 .fv__cat img {
@@ -356,6 +359,7 @@ body {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
   width: 3.1rem;
+  aspect-ratio: 33/33;
 }
 
 .link-button a:hover .link-button__arrow {
@@ -424,6 +428,7 @@ body {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
   width: 3.1rem;
+  aspect-ratio: 33/33;
 }
 
 .link-button02__arrow img {
@@ -480,6 +485,7 @@ body {
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
   width: 3.1rem;
+  aspect-ratio: 33/33;
 }
 
 .link-button03__arrow img {
@@ -598,13 +604,13 @@ body {
   gap: 15px;
 }
 
-.nav__link {
+.nav__icon {
   fill: #000;
   height: 15px;
   width: 19px;
 }
 
-.nav__link use {
+.nav__link {
   display: block;
   height: 100%;
   -o-object-fit: contain;
