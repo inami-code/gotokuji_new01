@@ -51,7 +51,7 @@ body {
 .footer {
   background-color: #000;
   padding-bottom: 4.8rem;
-  padding-top: 4.2rem;
+  padding-top: 3.5rem;
 }
 
 .footer__inner {
@@ -103,7 +103,7 @@ body {
   font-size: 1.1rem;
   letter-spacing: 0.1em;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 /*=========================================================
@@ -203,66 +203,7 @@ body {
 
 .hamburger span:nth-child(1) {
   top: 0;
-  width: 1.9rem;
-}
-
-.hamburger span:nth-child(2) {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-
-.hamburger span:nth-child(3) {
-  bottom: 0;
-  width: 1.25rem;
-}
-
-.hamburger.is-active span {
-  background-color: #000;
-}
-
-.hamburger.is-active span:nth-child(1) {
-  left: 0rem;
-  top: 46%;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  width: 2.1rem;
-}
-
-.hamburger.is-active span:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.is-active span:nth-child(3) {
-  bottom: 46%;
-  left: 0rem;
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  width: 2.1rem;
-}
-
-.hamburger {
-  height: 2.15rem;
-  position: relative;
-  width: 2.55rem;
-  z-index: 100;
-}
-
-.hamburger span {
-  background-color: #fff;
-  border-radius: 1rem;
-  height: 0.175rem;
-  left: 0;
-  position: absolute;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  width: inherit;
-}
-
-.hamburger span:nth-child(1) {
-  top: 0;
   width: 2rem;
-  height: 0.2rem;
 }
 
 .hamburger span:nth-child(2) {

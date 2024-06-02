@@ -8,23 +8,29 @@
 }
 
 .insta-button a {
-	background-image: url(../../images/icon_insta.svg);
+	background-image: url(../../images/icon_insta.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	display: block;
+	width: 16.6rem;
 	height: 4.7rem;
 	margin: 0 auto;
 	position: relative;
 	transition: background 0.3s;
-	width: 16.6rem;
 }
 
 .insta-button a:hover {
-	background-image: url(../../images/icon_insta_hover.svg);
+	background-image: url(../../images/icon_insta_hover.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: block;
+	width: 16.6rem;
+	height: 4.7rem;
+	margin: 0 auto;
 }
 
 .insta-button a::after {
-	background-image: url(../../images/icon_insta_hover-part.svg);
+	background-image: url(../../images/icon_insta_hover-part.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";

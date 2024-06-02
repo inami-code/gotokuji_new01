@@ -14,7 +14,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  gap: 1.3rem;
+  gap: clamp(8px,0.8666666666666667vw,13px);
   padding: 1.9rem;
   transition: transform 0.3s;
 }

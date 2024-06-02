@@ -1,32 +1,12 @@
-body {
-  font-family: "Noto Sans JP", sans-serif;
-  color: #000;
-  font-weight: 400;
-}
+@use "../global" as *;
 
-.u-desktop {
-  display: block;
-}
-
-.u-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 767px) {
-  .u-desktop {
-    display: none;
-  }
-  .u-mobile {
-    display: block;
-  }
-}
 /*=========================================================
 # info
 =========================================================*/
+
 .info__items {
   padding-bottom: 42.5rem;
 }
-
 .info__content {
   height: auto;
 }
@@ -36,7 +16,6 @@ body {
   bottom: -9.4rem;
   right: -12.1rem;
 }
-
 .info__item01-title::after {
   top: -4.9rem;
   left: 10rem;
@@ -44,4 +23,4 @@ body {
 
 .info__item03 {
   bottom: -33.2rem;
-}/*# sourceMappingURL=index_tab.css.map */
+}

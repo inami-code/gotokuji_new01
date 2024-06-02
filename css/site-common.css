@@ -31,6 +31,13 @@ body {
 }
 
 /*=========================================================
+# over-wrap
+=========================================================*/
+.over-wrap {
+  overflow: hidden;
+}
+
+/*=========================================================
 # description
 =========================================================*/
 .description {
@@ -310,7 +317,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 1.3rem;
+  gap: clamp(8px, 0.8666666667vw, 13px);
   padding: 1.9rem;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
@@ -513,7 +520,7 @@ body {
   width: 82.2rem;
   top: 2.2%;
   left: 51%;
-  aspect-ratio: 823/600;
+  aspect-ratio: 820/600;
 }
 
 .nav__img img {
