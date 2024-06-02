@@ -349,8 +349,8 @@ body {
 .link-button__arrow img {
   display: block;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
 }
 
@@ -568,7 +568,7 @@ body {
   background-color: #000;
   bottom: -5px;
   content: "";
-  height: 3px;
+  height: 2px;
   left: 0;
   position: absolute;
   -webkit-transform: scale(0, 1);

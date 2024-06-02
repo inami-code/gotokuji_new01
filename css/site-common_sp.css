@@ -310,14 +310,6 @@ body {
           transform: translateX(30%);
 }
 
-.link-button__arrow img {
-  display: block;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-}
-
 /* black
 --------------------------------------------------*/
 .link-button.link-button--black {
