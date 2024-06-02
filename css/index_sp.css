@@ -4,85 +4,52 @@ body {
   font-weight: 400;
 }
 
+.u-desktop {
+  display: block;
+}
+
+.u-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .u-desktop {
+    display: none;
+  }
+  .u-mobile {
+    display: block;
+  }
+}
 /*=========================================================
 # insta-button
 =========================================================*/
-.insta-button {
-  display: block;
-}
-
 .insta-button a {
-  background-image: url(../../images/icon_insta.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: block;
   height: 2.35rem;
-  margin: 0 auto;
-  position: relative;
-  -webkit-transition: background 0.3s;
-  transition: background 0.3s;
   width: 8.3rem;
 }
 
-.insta-button a:hover {
-  background-image: url(../../images/icon_insta_hover.svg);
-}
-
 .insta-button a::after {
-  background-image: url(../../images/icon_insta_hover-part.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
   height: 1.1rem;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
   width: 0.9rem;
-}
-
-.insta-button a:hover::after {
-  opacity: 1;
 }
 
 /*=========================================================
 # map
 =========================================================*/
 .map__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 0;
+  gap: 0.2rem;
 }
 
 .map__title {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
-  width: 50%;
-  aspect-ratio: 263/209;
-}
-
-.map__title img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 38%;
+  margin-top: 0;
 }
 
 .map__img {
@@ -95,25 +62,16 @@ body {
   aspect-ratio: 756/804;
 }
 
-.map__img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /*=========================================================
 # area-sec
 =========================================================*/
 .area-sec__inner.inner {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
 .area-sec__item.area-sec__item--top01 {
-  margin-top: 10.3rem;
+  margin-top: 10.1rem;
 }
 
 .area-sec__item.area-sec__item--top02 {
@@ -121,15 +79,6 @@ body {
 }
 
 .area-sec__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -157,56 +106,44 @@ body {
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
   text-align: center;
+  margin-top: 0;
 }
 
 .area-sec__title {
   font-size: 1.9rem;
   letter-spacing: 0.05em;
-  padding: 0 0;
+  padding: 0;
   min-height: 4.55rem;
-  display: block;
-  place-content: center;
-  position: relative;
+  margin: 0 auto;
+  width: 91%;
 }
 
 .area-sec__title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
   width: 1.2rem;
   height: 4.55rem;
-  background-image: url(../../images/icon_left-parentheses.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .area-sec__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
   width: 1.2rem;
   height: 4.55rem;
-  background-image: url(../../images/icon_right-parentheses.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .area-sec__text {
   font-size: 1.3rem;
-  line-height: 2;
+  line-height: 2.0769230769;
   letter-spacing: 0.05em;
-  margin-top: 4rem;
-  text-align: justify;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 88.5%;
 }
 
 .area-sec__button {
-  margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 1.6rem;
+}
+
+.area-sec__item.area-sec__item--top01 .area-sec__button {
+  margin-top: 1.2rem;
 }
 
 .area-sec__right {
@@ -215,7 +152,7 @@ body {
           flex: 0 1 auto;
   position: relative;
   margin-right: calc(50% - 50vw);
-  padding-left: 3rem;
+  padding-left: 4.4rem;
 }
 
 .area-sec__img {
@@ -223,46 +160,36 @@ body {
 }
 
 .area-sec__img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 3.2rem;
 }
 
 .area-sec__right::after {
-  content: "";
-  position: absolute;
   top: -66px;
-  right: 3.05px;
+  right: 3.005rem;
   width: 8.55rem;
   height: 7.05rem;
-  background-image: url(../../images/yamashita_cat.png);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .area-sec__right.area-sec__right--syoutengai {
   margin-right: auto;
   margin-left: calc(50% - 50vw);
-  padding-right: 3rem;
+  padding-right: 4.4rem;
   padding-left: 0;
 }
 
 .area-sec__right.area-sec__right--syoutengai::after {
   top: auto;
-  bottom: 7px;
-  right: -25px;
+  bottom: 1px;
+  right: -3px;
   width: 5.6rem;
   height: 8.75rem;
   background-image: url(../../images/syoutengai_cat.png);
 }
 
 .area-sec__right.area-sec__right--gotokuji::after {
-  top: -74px;
+  top: -81px;
   right: auto;
-  left: -6px;
+  left: 12px;
   width: 13.55rem;
   height: 11rem;
   background-image: url(../../images/gotokuji_cat.png);
@@ -270,26 +197,31 @@ body {
 
 .area-sec__right.area-sec__right--syoutengai .area-sec__img img {
   border-top-left-radius: 0;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 3.2rem;
 }
 
 .area-sec__sns {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  margin-top: 5.95rem;
+  margin-top: 1.95rem;
+}
+
+.area-sec__item.area-sec__item--top01 .area-sec__sns,
+.area-sec__item.area-sec__item--top02 .area-sec__sns {
+  margin-top: 0.65rem;
+}
+
+.area-sec__insta {
+  margin-top: -0.8rem;
+  padding-left: 2rem;
 }
 
 /*=========================================================
 # manekineko
 =========================================================*/
 .manekineko__item {
-  background-image: url(../../images/manekineko_img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100vw;
   height: 23rem;
-  margin: 0 calc(50% - 50vw);
   padding-top: 1.15em;
   padding-bottom: 2.35rem;
 }
@@ -301,73 +233,44 @@ body {
   margin: 0 auto;
   padding-left: 0.95rem;
   padding-right: 0.95rem;
-  aspect-ratio: 1193/345;
-}
-
-.manekineko__item-img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  aspect-ratio: 1195.5/345;
 }
 
 .manekineko__button {
   margin-left: auto;
   margin-right: auto;
-  margin-top: -30px;
+  margin-top: -1.9rem;
 }
 
 /*=========================================================
 # info
 =========================================================*/
-.info {
-  position: relative;
-}
-
 .info__head-img {
-  width: 100vw;
-  height: 250px;
-  margin: 0 calc(50% - 50vw);
-  -o-object-fit: cover;
-     object-fit: cover;
-  aspect-ratio: 1500/500;
+  height: 25rem;
 }
 
 .info__head-img img {
-  display: block;
-  width: 100%;
-  height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 25rem;
 }
 
 .info__title {
-  font-family: "Kaisei HarunoUmi", serif;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 4.05rem;
+  margin-top: 3.9rem;
   font-size: 2.4rem;
-  font-weight: 400;
 }
 
 .info__text {
-  text-align: justify;
-  margin-top: 3.05rem;
+  text-align: left;
+  margin-top: 1.7rem;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.3rem;
   letter-spacing: 0.15em;
   line-height: 2.0769230769;
-  width: 90%;
+  width: 89.5%;
 }
 
 .info__items {
-  margin-top: 2.25rem;
+  margin-top: 2.7rem;
 }
 
 .info__content {
@@ -383,7 +286,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 1.2rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -395,7 +298,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 9.05rem;
+  margin-top: 3.2rem;
+  gap: 3.4rem;
 }
 
 .info__content-left {
@@ -414,7 +318,8 @@ body {
 .info__content-text {
   font-size: 1.3rem;
   line-height: 1.9230769231;
-  margin-top: 1.5rem;
+  letter-spacing: 0.05em;
+  margin-top: 0;
 }
 
 .info__content-right {
@@ -422,7 +327,7 @@ body {
       -ms-flex: 0 1 35%;
           flex: 0 1 35%;
   aspect-ratio: 420/420;
-  width: 60%;
+  width: 61%;
   margin-left: auto;
 }
 
@@ -437,13 +342,10 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  border-radius: 20px;
+  border-radius: 1rem;
 }
 
 .info__item01 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -455,44 +357,30 @@ body {
   position: static;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  margin-top: 4.5rem;
+  margin-top: 1.9rem;
+  padding-left: 1.9rem;
 }
 
 .info__item01-img {
-  width: 17.5rem;
+  width: 18.3rem;
   margin-bottom: 0;
   aspect-ratio: 292/292;
 }
 
-.info__item01-img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .info__item01-right {
   position: relative;
-  padding-left: 4rem;
+  padding-left: 5.1rem;
 }
 
 .info__item01-right::after {
-  position: absolute;
-  content: "";
-  top: -22px;
-  left: 139px;
+  top: -2.2rem;
+  left: 13.9rem;
   width: 5rem;
   height: 3.9rem;
-  background-image: url(../../images/icon_arrow01.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .info__item01-title {
   font-size: 1.4rem;
-  font-weight: 700;
-  color: #a49a74;
   letter-spacing: 0.05em;
 }
 
@@ -501,79 +389,31 @@ body {
   line-height: 1.5;
   color: #a49a74;
   letter-spacing: 0.15em;
+  margin-top: 0.3rem;
 }
 
 .info__item02 {
-  margin-top: 4rem;
+  margin-top: 2.7rem;
+  padding-left: 0;
 }
 
 .info__item02-img {
-  width: 20rem;
+  max-width: 30rem;
+  width: 58%;
   aspect-ratio: 328/155;
   margin-left: auto;
   margin-right: auto;
 }
 
-.info__item02-img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 .info__content-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 0.6rem;
-  margin-top: 3rem;
-}
-
-.info__content-link a {
-  position: relative;
-}
-
-.info__content-link a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background-color: #b82e04;
-  left: 0;
-  bottom: -3px;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
-}
-
-.info__content-link a:hover::after {
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  -webkit-transform-origin: right top;
-          transform-origin: right top;
+  margin-top: 1.2rem;
 }
 
 .info__icon {
-  height: 9.5px;
-  width: 14px;
+  height: 0.95rem;
+  width: 1.4rem;
   fill: #b82e04;
-}
-
-.info__icon-img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .info__link-text {
@@ -594,57 +434,35 @@ body {
           align-items: flex-end;
   gap: 1.5rem;
   margin-top: 2.65rem;
-}
-
-.info__item03-wrap {
-  position: relative;
+  padding-right: 1.7rem;
 }
 
 .info__item03-wrap::before {
-  position: absolute;
-  content: "";
-  top: 129px;
-  left: -130px;
+  top: 13.8rem;
+  left: -12.35rem;
   width: 8.25em;
   height: 11.7rem;
-  background-image: url(../../images/info_img06.png);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .info__item03-img {
-  width: 17.5rem;
+  width: 18.5rem;
   aspect-ratio: 292/292;
-}
-
-.info__item03-img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .info__item03-comment {
   position: relative;
+  margin-top: 0.8rem;
 }
 
 .info__item03-comment::after {
-  position: absolute;
-  content: "";
-  top: -50px;
-  left: -28px;
+  top: -4.7rem;
+  left: -1.8rem;
   width: 2.15rem;
   height: 6.05rem;
-  background-image: url(../../images/icon_arrow02.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 
 .info__item03-title {
   font-size: 1.4rem;
-  font-weight: 700;
-  color: #a49a74;
   letter-spacing: 0.05em;
 }
 
@@ -653,20 +471,21 @@ body {
   line-height: 1.5;
   color: #a49a74;
   letter-spacing: 0.15em;
+  margin-top: 0.4rem;
 }
 
 /*=========================================================
 # top-map
 =========================================================*/
 .top-map {
-  margin-top: 5.9rem;
+  margin-top: 3.8rem;
 }
 
 /*=========================================================
 # top-area
 =========================================================*/
 .top-area {
-  margin-top: 8rem;
+  margin-top: 4.1rem;
 }
 
 /*=========================================================
@@ -680,12 +499,12 @@ body {
 # top-info
 =========================================================*/
 .top-info {
-  margin-top: 6.95rem;
+  margin-top: 9rem;
 }
 
 /*=========================================================
 # top-footer
 =========================================================*/
 .top-footer {
-  margin-top: 8.3rem;
+  margin-top: 9.1rem;
 }/*# sourceMappingURL=index_sp.css.map */

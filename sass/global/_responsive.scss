@@ -21,3 +21,21 @@ $mediaqueries: (
     @content;
   }
 }
+
+.u-desktop {
+  display: block;
+}
+
+.u-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .u-desktop {
+    display: none;
+  }
+
+  .u-mobile {
+    display: block;
+  }
+}

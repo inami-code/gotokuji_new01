@@ -3,15 +3,15 @@
 /*=========================================================
 # map
 =========================================================*/
-.map__inner.inner{
-  max-width: 1145px;
+.map__inner.inner {
+  max-width: 114.5rem;
   width: 100%;
   margin: 0 auto;
 }
 
 .map__container {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   gap: 6.5rem;
 }
@@ -19,10 +19,10 @@
 .map__title {
   flex: 0 1 26%;
   aspect-ratio: 263 / 209;
-  margin-top: -86px;
+  margin-top: -8.6rem;
 }
 
-.map__title img{
+.map__title img {
   display: block;
   width: 100%;
   height: 100%;
@@ -34,7 +34,7 @@
   aspect-ratio: 756 / 804;
 }
 
-.map__img img{
+.map__img img {
   display: block;
   width: 100%;
   height: 100%;

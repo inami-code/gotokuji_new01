@@ -4,6 +4,22 @@ body {
   font-weight: 400;
 }
 
+.u-desktop {
+  display: block;
+}
+
+.u-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .u-desktop {
+    display: none;
+  }
+  .u-mobile {
+    display: block;
+  }
+}
 /*=========================================================
 # insta-button
 =========================================================*/
@@ -53,7 +69,7 @@ body {
 # map
 =========================================================*/
 .map__inner.inner {
-  max-width: 1145px;
+  max-width: 114.5rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -76,7 +92,7 @@ body {
       -ms-flex: 0 1 26%;
           flex: 0 1 26%;
   aspect-ratio: 263/209;
-  margin-top: -86px;
+  margin-top: -8.6rem;
 }
 
 .map__title img {
@@ -106,7 +122,7 @@ body {
 # area-sec
 =========================================================*/
 .area-sec__inner.inner {
-  max-width: 1260px;
+  max-width: 126rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -221,7 +237,7 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  border-top-left-radius: 80px;
+  border-top-left-radius: 8rem;
 }
 
 .area-sec__right::after {
@@ -316,7 +332,7 @@ body {
 
 .info__head-img {
   width: 100vw;
-  height: 500px;
+  height: 50rem;
   margin: 0 calc(50% - 50vw);
   -o-object-fit: cover;
      object-fit: cover;
@@ -434,7 +450,7 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 .info__item01 {
@@ -473,8 +489,8 @@ body {
 .info__item01-right::after {
   position: absolute;
   content: "";
-  top: -72px;
-  left: -25px;
+  top: -7.2rem;
+  left: -2.5rem;
   width: 8rem;
   height: 6.2rem;
   background-image: url(../../images/icon_arrow01.svg);
@@ -557,10 +573,10 @@ body {
 }
 
 .info__icon {
-  height: 15px;
-  width: 19px;
+  height: 1.5rem;
+  width: 1.9rem;
   fill: #b82e04;
-  margin-top: 5px;
+  margin-top: 0.5rem;
 }
 
 .info__icon-img {
@@ -592,7 +608,7 @@ body {
           align-items: flex-end;
   gap: 1.5rem;
   margin-top: -19.9rem;
-  padding-right: 52px;
+  padding-right: 5.2rem;
 }
 
 .info__item03-wrap {
@@ -602,8 +618,8 @@ body {
 .info__item03-wrap::before {
   position: absolute;
   content: "";
-  top: 116px;
-  left: -187px;
+  top: 11.6rem;
+  left: -18.7rem;
   width: 13.65rem;
   height: 19.1rem;
   background-image: url(../../images/info_img06.png);
@@ -633,8 +649,8 @@ body {
 .info__item03-comment::after {
   position: absolute;
   content: "";
-  top: -79px;
-  left: -31px;
+  top: -7.9rem;
+  left: -3.1rem;
   width: 3.6rem;
   height: 9.6rem;
   background-image: url(../../images/icon_arrow02.svg);

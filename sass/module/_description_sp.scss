@@ -4,14 +4,14 @@
 # description
 =========================================================*/
   .description {
-    margin-top: 3.95rem;
+    margin-top: 3.1rem;
   }
   
   .description__text {
-    display: flex;
     font-size: 1.3rem;
-    justify-content: center;
     letter-spacing: 0.05em;
     line-height: calc(27 / 13);
     text-align: left;
+    width: 90%;
+    margin: 0 auto;
   }

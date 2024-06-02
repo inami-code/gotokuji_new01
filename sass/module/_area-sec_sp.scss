@@ -4,13 +4,12 @@
 # area-sec
 =========================================================*/
 .area-sec__inner.inner {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
 
 .area-sec__item.area-sec__item--top01 {
-  margin-top: 10.3rem;
+  margin-top: 10.1rem;
 }
 
 .area-sec__item.area-sec__item--top02 {
@@ -18,9 +17,6 @@
 }
 
 .area-sec__wrap {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   flex-direction: column;
   gap: 10.1rem;
   margin-right: auto;
@@ -40,63 +36,51 @@
 .area-sec__left {
   flex: 0 1 auto;
   text-align: center;
+  margin-top: 0;
 }
 
 .area-sec__title {
   font-size: 1.9rem;
   letter-spacing: 0.05em;
-  padding: 0 0;
+  padding: 0;
   min-height: 4.55rem;
-  display: block;
-  place-content: center;
-  position: relative;
+  margin: 0 auto;
+  width: 91%;
 }
 
 .area-sec__title::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
   width: 1.2rem;
   height: 4.55rem;
-  background-image: url(../../images/icon_left-parentheses.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .area-sec__title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
   width: 1.2rem;
   height: 4.55rem;
-  background-image: url(../../images/icon_right-parentheses.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .area-sec__text {
   font-size: 1.3rem;
-  line-height: calc(30 / 15);
+  line-height: calc(27 / 13);
   letter-spacing: 0.05em;
-  margin-top: 4.0rem;
-  text-align: justify;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 88.5%;
 }
 
 .area-sec__button {
-  margin-top: 2.0rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 1.6rem;
+}
+
+.area-sec__item.area-sec__item--top01 .area-sec__button{
+  margin-top: 1.2rem;
 }
 
 .area-sec__right {
   flex: 0 1 auto;
   position: relative;
   margin-right: calc(50% - 50vw);
-  padding-left: 3rem;
+  padding-left: 4.4rem;
 }
 
 .area-sec__img {
@@ -104,45 +88,36 @@
 }
 
 .area-sec__img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-top-left-radius: 50px;
+  border-top-left-radius: 3.2rem;
 }
 
 .area-sec__right::after {
-  content: "";
-  position: absolute;
   top: -66px;
-  right: 3.05px;
+  right: 3.005rem;
   width: 8.55rem;
   height: 7.05rem;
-  background-image: url(../../images/yamashita_cat.png);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 .area-sec__right.area-sec__right--syoutengai {
   margin-right: auto;
   margin-left: calc(50% - 50vw);
-  padding-right: 3rem;
+  padding-right: 4.4rem;
   padding-left: 0;
 }
 
 .area-sec__right.area-sec__right--syoutengai::after {
   top: auto;
-  bottom: 7px;
-  right: -25px;
+  bottom: 1px;
+  right: -3px;
   width: 5.6rem;
   height: 8.75rem;
   background-image: url(../../images/syoutengai_cat.png);
 }
 
 .area-sec__right.area-sec__right--gotokuji::after {
-  top: -74px;
+  top: -81px;
   right: auto;
-  left: -6px;
+  left: 12px;
   width: 13.55rem;
   height: 11.0rem;
   background-image: url(../../images/gotokuji_cat.png);
@@ -150,12 +125,22 @@
 
 .area-sec__right.area-sec__right--syoutengai .area-sec__img img {
   border-top-left-radius: 0;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 3.2rem;
 }
 
 .area-sec__sns {
   width: 100vw;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  margin-top: 5.95rem;
+  margin-top: 1.95rem;
+}
+
+.area-sec__item.area-sec__item--top01 .area-sec__sns,
+.area-sec__item.area-sec__item--top02 .area-sec__sns{
+  margin-top: 0.65rem;
+}
+
+.area-sec__insta{
+  margin-top: -0.8rem;
+  padding-left: 2rem;
 }

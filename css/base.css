@@ -4,6 +4,22 @@ body {
   font-weight: 400;
 }
 
+.u-desktop {
+  display: block;
+}
+
+.u-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .u-desktop {
+    display: none;
+  }
+  .u-mobile {
+    display: block;
+  }
+}
 html {
   font-size: 62.5%;
 }

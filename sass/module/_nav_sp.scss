@@ -4,52 +4,23 @@
 =========================================================*/
 
 .nav {
-  background-color: $gold;
-  bottom: 0;
-  content: "";
-  display: none;
-  height: 100vh;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 10;
+  padding: 7.5rem 0;
 }
 
-.nav.is-active {
-  display: block;
-}
-
-.nav__inner {
-  height: inherit;
-  width: inherit;
-}
-
-.nav__container {
-  height: inherit;
-  position: relative;
-  width: inherit;
-}
 
 .nav__img {
+  top: 32.5%;
   left: 50%;
-  position: absolute;
-  top: 45%;
   transform: translate(-50%, -50%);
-  width: 435px;
+  width: 49.8rem;
+  aspect-ratio: 498 / 383.5;
 }
 
-.nav__img img {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
 
 .nav__items {
-  left: calc(50% - 0px);
+  left: calc(50% + 45px);
   position: absolute;
-  top: 47%;
+  top: 36.2%;
   transform: translate(-50%, -50%);
 }
 
@@ -57,51 +28,42 @@
   margin-top: 20px;
 }
 
+.nav__item {
+  width: 16rem;
+}
+
 .nav__item a {
   display: block;
-  padding: 10px;
+  padding: 1.2rem;
 }
+
+.nav__item.nav__item--link {
+  margin-top: 1.5rem;
+}
+
+.nav__item.nav__item--link a {
+  padding-left: 1.2rem;
+}
+
 
 .nav__item a p {
-  font-size: 10px;
-  letter-spacing: 0.02em;
-  position: relative;
-  width: fit-content;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
 }
 
-.nav__item a p::after {
-  background-color: $black;
-  bottom: -5px;
-  content: "";
-  height: 3px;
-  left: 0;
-  position: absolute;
-  transform: scale(0, 1);
-  transform-origin: right top;
-  transition: transform 0.5s;
-  width: 100%;
+.nav__item.nav__item--link a p {
+  font-size: 1.2rem;
 }
 
-.nav__item a:hover p::after {
-  transform: scale(1, 1);
-  transform-origin: left top;
-}
 
 .nav__flex-wrap {
   align-items: center;
   display: flex;
-  gap: 15px;
+  gap: 0.8rem;
 }
 
 .nav__icon {
   fill: $black;
-  height: 15px;
-  width: 19px;
-}
-
-.nav__link{
-  display: block;
-  height: 100%;
-  object-fit: contain;
-  width: 100%;
+  height: 0.95rem;
+  width: 1.25rem;
 }
