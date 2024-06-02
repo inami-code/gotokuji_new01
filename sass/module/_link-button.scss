@@ -14,7 +14,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  gap: clamp(8px,0.8666666666666667vw,13px);
+  gap: clamp(8px, 0.8666666666666667vw, 13px);
   padding: 1.9rem;
   transition: transform 0.3s;
 }
@@ -39,7 +39,7 @@
 .link-button__arrow img {
   display: block;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -49,11 +49,13 @@
 .link-button.link-button--black {
   background-color: $black;
 }
+
 .link-button.link-button--black .link-button__text {
   color: $gold;
   font-size: clamp(14px, 1vw, 16px);
 }
-.link-button.link-button--black .link-button__arrow{
+
+.link-button.link-button--black .link-button__arrow {
   width: clamp(20px, 3.2666666666666666vw, 49px);
 }
 
@@ -96,7 +98,7 @@
 .link-button02__arrow img {
   display: block;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -141,6 +143,6 @@
 .link-button03__arrow img {
   display: block;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }

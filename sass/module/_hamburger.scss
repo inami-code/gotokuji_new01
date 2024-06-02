@@ -12,7 +12,7 @@
 
 .hamburger span {
 	display: block;
-  background-color: $white;
+	background-color: $white;
 	border-radius: 1rem;
 	height: 0.35rem;
 	left: 0;
@@ -21,8 +21,8 @@
 	width: inherit;
 }
 
-.hamburger.js-hamburger.transform span{
-	background-color: rgba(0,0,0,1); /* 背景色変更 */
+.hamburger.js-hamburger.transform span {
+	background-color: rgba(0, 0, 0, 1);
 }
 
 .hamburger span:nth-child(1) {

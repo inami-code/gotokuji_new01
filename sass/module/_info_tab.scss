@@ -7,6 +7,7 @@
 .info__items {
   padding-bottom: 42.5rem;
 }
+
 .info__content {
   height: auto;
 }
@@ -16,11 +17,16 @@
   bottom: -9.4rem;
   right: -12.1rem;
 }
+
 .info__item01-title::after {
   top: -4.9rem;
   left: 10rem;
 }
 
 .info__item03 {
-  bottom: -33.2rem;
+  bottom: -31rem;
+}
+
+.info__content.info__content--02 .info__content-left {
+  padding-bottom: 0;
 }

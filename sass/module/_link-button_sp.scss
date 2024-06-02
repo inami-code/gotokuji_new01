@@ -38,7 +38,7 @@
 .link-button__arrow img {
   display: block;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -47,13 +47,16 @@
 .link-button.link-button--black {
   background-color: $black;
 }
+
 .link-button.link-button--black .link-button__text {
   color: $gold;
   font-size: 1.2rem;
 }
-.link-button.link-button--black .link-button__arrow{
+
+.link-button.link-button--black .link-button__arrow {
   width: 3.1rem;
 }
+
 /*=========================================================
 # パターン02
 =========================================================*/
@@ -92,7 +95,7 @@
 .link-button02__arrow img {
   display: block;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -137,6 +140,6 @@
 .link-button03__arrow img {
   display: block;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
 }

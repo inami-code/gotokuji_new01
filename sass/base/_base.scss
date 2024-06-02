@@ -1,4 +1,5 @@
 @use "../global" as *;
+
 html {
   font-size: 62.5%;
 }
@@ -12,6 +13,7 @@ body {
 // PCでは電話番号のクリックを無効にする
 a[href^="tel:"] {
   pointer-events: none;
+
   @include mq("md") {
     pointer-events: auto;
   }

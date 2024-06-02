@@ -105,8 +105,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .map__img {
@@ -120,8 +120,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*=========================================================
@@ -243,8 +243,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-top-left-radius: 8rem;
 }
 
@@ -321,8 +321,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .manekineko__button {
@@ -394,7 +394,6 @@ body {
 
 .info__content {
   position: relative;
-  height: 42rem;
   padding-bottom: calc(70px - 0.2100840336 * (100vw - 1024px));
 }
 
@@ -430,6 +429,7 @@ body {
       -ms-flex: 0 1 62.5%;
           flex: 0 1 62.5%;
   margin-top: 4.7rem;
+  padding-bottom: 15rem;
 }
 
 .info__content-title {
@@ -471,8 +471,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 2rem;
 }
 
@@ -560,8 +560,8 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .info__content-link {
@@ -614,8 +614,8 @@ body {
 .info__icon-img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 

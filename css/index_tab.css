@@ -43,5 +43,9 @@ body {
 }
 
 .info__item03 {
-  bottom: -33.2rem;
+  bottom: -31rem;
+}
+
+.info__content.info__content--02 .info__content-left {
+  padding-bottom: 0;
 }/*# sourceMappingURL=index_tab.css.map */

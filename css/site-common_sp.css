@@ -156,8 +156,8 @@ body {
 .fv__logo img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -175,8 +175,8 @@ body {
 .fv__cat img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -313,8 +313,8 @@ body {
 .link-button__arrow img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -381,8 +381,8 @@ body {
 .link-button02__arrow img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -438,8 +438,8 @@ body {
 .link-button03__arrow img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 

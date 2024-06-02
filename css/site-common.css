@@ -152,7 +152,7 @@ body {
 
 .fv__title {
   position: absolute;
-  bottom: 0;
+  bottom: -0.05rem;
   left: 50%;
   max-width: 39.8rem;
   height: 18rem;
@@ -184,8 +184,8 @@ body {
 .fv__logo img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -203,8 +203,8 @@ body {
 .fv__cat img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -231,7 +231,7 @@ body {
 }
 
 .hamburger.js-hamburger.transform span {
-  background-color: rgb(0, 0, 0); /* 背景色変更 */
+  background-color: rgb(0, 0, 0);
 }
 
 .hamburger span:nth-child(1) {
@@ -349,8 +349,8 @@ body {
 .link-button__arrow img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -417,8 +417,8 @@ body {
 .link-button02__arrow img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 
@@ -474,8 +474,8 @@ body {
 .link-button03__arrow img {
   display: block;
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
 }
 

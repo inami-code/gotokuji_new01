@@ -5,25 +5,25 @@
 =========================================================*/
 .footer {
   background-color: $black;
-	padding-bottom: 4.8rem;
+  padding-bottom: 4.8rem;
   padding-top: 3.5rem;
 }
 
 .footer__inner {
-	padding: 0 1.5rem;
+  padding: 0 1.5rem;
 }
 
 .footer__text {
-	font-feature-settings: "palt";
-	color: #a49a74;
-	font-size: 1.1rem;
-	letter-spacing: 0.15em;
+  font-feature-settings: "palt";
+  color: #a49a74;
+  font-size: 1.1rem;
+  letter-spacing: 0.15em;
   line-height: calc(24 / 11);
-	text-align: center;
+  text-align: center;
 }
 
 .footer__text a {
-	position: relative;
+  position: relative;
 }
 
 .footer__text a::after {
@@ -45,9 +45,9 @@
 }
 
 .footer__copyright {
-	display: block;
+  display: block;
   color: $gold;
-	font-size: 1.1rem;
+  font-size: 1.1rem;
   letter-spacing: 0.1em;
   text-align: center;
   margin-top: 3rem;
