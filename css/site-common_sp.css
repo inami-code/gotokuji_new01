@@ -439,11 +439,12 @@ body {
 # nav
 =========================================================*/
 .nav {
-  padding: 7.5rem 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .nav__img {
-  top: 32.5%;
+  top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -454,7 +455,7 @@ body {
 .nav__items {
   left: calc(50% + 45px);
   position: absolute;
-  top: 36.2%;
+  top: 54.2%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
