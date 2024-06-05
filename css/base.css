@@ -37,8 +37,4 @@ a[href^="tel:"] {
   a[href^="tel:"] {
     pointer-events: auto;
   }
-}
-
-.feed-powered-by-es.feed-powered-by-es-slider-img {
-  display: none !important;
 }/*# sourceMappingURL=base.css.map */

@@ -4,11 +4,16 @@
 =========================================================*/
 
 .insta-button a {
-	height: 2.35rem;
-	width: 8.3rem;
+	height: 3.525rem;
+	width: 12.45rem;
+}
+
+.insta-button a:hover {
+	height: 3.525rem;
+	width: 12.45rem;
 }
 
 .insta-button a::after {
-	height: 1.1rem;
-	width: 0.9rem;
+	height: 1.65rem;
+	width: 1.35rem;
 }

@@ -150,6 +150,7 @@
   background-image: url(../../images/info_circle.svg);
   background-size: contain;
   background-repeat: no-repeat;
+  animation: 15s linear infinite rotation1;
 }
 
 
@@ -226,22 +227,23 @@
   background-color: $red;
   left: 0;
   bottom: -0.5rem;
-  transform: scale(1, 1);
-  transform-origin: left top;
-  transition: transform .5s;
+  transition: background .3s;
 }
 
 .info__content-link a:hover::after {
-  transform: scale(0, 1);
-  transform-origin: right top;
+  background-color: $gold;
 }
-
 
 .info__icon {
   height: 1.5rem;
   width: 1.9rem;
   fill: $red;
   margin-top: 0.5rem;
+  transition: all .3s;
+}
+
+.info__content-link:hover .info__icon {
+  fill: $gold
 }
 
 .info__icon-img {
@@ -258,7 +260,14 @@
   letter-spacing: 0.05em;
   font-feature-settings: "palt";
   color: $red;
+  transition: color .3s;
 }
+
+.info__content-link:hover .info__link-text{
+  color: $gold;
+}
+
+
 
 .info__item03 {
   position: absolute;
@@ -290,6 +299,26 @@
   background-image: url(../../images/info_img06.png);
   background-repeat: no-repeat;
   background-size: contain;
+  opacity: 0;
+}
+
+.info__item03-img.fade-in::before {
+  opacity: 1;
+  animation-name: fadeDownAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeDownAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .info__item03-img::after {
@@ -302,6 +331,7 @@
   background-image: url(../../images/info_circle.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  animation: 15s linear infinite rotation1;
 }
 
 .info__item03-img img {
@@ -345,4 +375,14 @@
   letter-spacing: 0.15em;
   margin-top: 1rem;
   font-feature-settings: "palt";
+}
+
+@keyframes rotation1 {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

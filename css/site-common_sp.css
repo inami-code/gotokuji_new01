@@ -444,7 +444,7 @@ body {
 }
 
 .nav__img {
-  top: 50%;
+  top: 39%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -455,7 +455,7 @@ body {
 .nav__items {
   left: calc(50% + 45px);
   position: absolute;
-  top: 54.2%;
+  top: 43.2%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }

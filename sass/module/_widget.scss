@@ -1,0 +1,12 @@
+@use "../global" as *;
+
+/*=========================================================
+# EmbedFeed
+=========================================================*/
+.feed-powered-by-es.feed-powered-by-es-slider-img {
+  display: none !important;
+}
+
+.es-header-btn, .es-header-btn:active, .es-header-btn:focus {
+  background-color: #000 !important;
+}

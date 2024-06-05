@@ -8,6 +8,11 @@
   display: block;
   max-width: 36rem;
   width: 100%;
+  transition: background 0.3s;
+}
+
+.link-button:hover{
+  background-color: $gold;
 }
 
 .link-button a {

@@ -40,9 +40,8 @@ jQuery(function ($) {
 
 
   $(document).ready(function () {
-    // mvHeightをイベントハンドラの外側で宣言
     let fvHeight;
-  
+
     $(window).on("scroll", function () {
       fvHeight = $(".js-fv").height();
       // ファーストビューの高さを取得
@@ -57,5 +56,77 @@ jQuery(function ($) {
       }
     });
   });
-  
+
+
+});
+// ------------------------------------
+//フェードインアニメーション
+// ------------------------------------
+function fadeAnime() {
+
+  $('.fadeUpTrigger').each(function () { //fadeUpTriggerというクラス名が
+    var elemPos = $(this).offset().top - 50;//要素より、50px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass('fadeUp');// 画面内に入ったらfadeUpというクラス名を追記
+    }
+  });
+
+  $('.fadeDownTrigger').each(function () { //fadeDownTriggerというクラス名が
+    var elemPos = $(this).offset().top - 50;//要素より、50px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass('fadeDown');// 画面内に入ったらfadeDownというクラス名を追記
+    }
+  });
+
+  $('.fadeLeftTrigger').each(function () { //fadeLeftTriggerというクラス名が
+    var elemPos = $(this).offset().top - 50;//要素より、50px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass('fadeLeft');// 画面内に入ったらfadeLeftというクラス名を追記
+    }
+  });
+
+  $('.fadeRightTrigger').each(function () { //fadeRightTriggerというクラス名が
+    var elemPos = $(this).offset().top - 50;//要素より、50px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass('fadeRight');// 画面内に入ったらfadeRightというクラス名を追記
+    }
+  });
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+$(window).scroll(function () {
+  fadeAnime();/* アニメーション用の関数を呼ぶ*/
+});// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+$(document).ready(function () {
+  function checkInView() {
+    var $window = $(window);
+    var windowHeight = $window.height();
+    var windowTopPosition = $window.scrollTop();
+    var windowBottomPosition = windowTopPosition + windowHeight;
+
+    $('.info__item03-img').each(function () {
+      var $element = $(this);
+      var elementHeight = $element.outerHeight();
+      var elementTopPosition = $element.offset().top;
+      var elementBottomPosition = elementTopPosition + elementHeight;
+
+      // 要素のボトムがビューポートに入っているかをチェック
+      if (elementBottomPosition <= windowBottomPosition) {
+        $element.addClass('fade-in');
+      }
+    });
+  }
+
+  // ページロード時とスクロールイベントでチェックを実行
+  $(window).on('scroll resize', checkInView);
+  $(window).trigger('scroll');
 });

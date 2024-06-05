@@ -1,0 +1,32 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #000;
+  font-weight: 400;
+}
+
+.u-desktop {
+  display: block;
+}
+
+.u-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .u-desktop {
+    display: none;
+  }
+  .u-mobile {
+    display: block;
+  }
+}
+/*=========================================================
+# EmbedFeed
+=========================================================*/
+.feed-powered-by-es.feed-powered-by-es-slider-img {
+  display: none !important;
+}
+
+.es-header-btn, .es-header-btn:active, .es-header-btn:focus {
+  background-color: #000 !important;
+}/*# sourceMappingURL=widget.css.map */
