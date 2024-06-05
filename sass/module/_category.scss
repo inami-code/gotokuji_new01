@@ -25,6 +25,12 @@
 	border-radius: 2.5rem;
 	text-align: center;
 	font-feature-settings: "palt";
+	transition: all .3s;
+}
+
+.category__item:hover{
+	color: $white;
+	background-color: $gold;
 }
 
 .category__item.is-active{

@@ -1,3 +1,7 @@
 @use "./module/page-fv";
 @use "./module/category";
-@use "./page/page-category";
+@use "./module/content";
+@use "./module/cards";
+@use "./module/card";
+@use "./page/sub-category";
+@use "./page/sub-content";
