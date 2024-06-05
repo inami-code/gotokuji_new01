@@ -1,0 +1,33 @@
+@use "../global" as *;
+
+/*=========================================================
+# category
+=========================================================*/
+.category__inner.inner {
+	max-width: 114rem;
+}
+
+.category__items {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 2.4rem;
+}
+
+.category__item {
+	width: 100%;
+	font-size: 1.5rem;
+	font-weight: $medium;
+	color: $gold;
+	letter-spacing: 0.05em;
+	padding: 1rem;
+	cursor: pointer;
+	border: 2px solid $gold;
+	border-radius: 2.5rem;
+	text-align: center;
+	font-feature-settings: "palt";
+}
+
+.category__item.is-active{
+	color: $white;
+	background-color: $gold;
+}
