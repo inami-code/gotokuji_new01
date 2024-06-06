@@ -4,15 +4,12 @@
 # breadcrumb
 =========================================================*/
 
-.breadcrumb__inner.inner{
-	max-width: 114rem;
-}
-
 .breadcrumb__inner {
 display: flex;
 align-items: center;
-font-size: 1.2rem;
+font-size: 1.4rem;
 letter-spacing: 0.05em;
+font-feature-settings: "palt";
 }
 
 .breadcrumb__inner span{
@@ -20,6 +17,7 @@ letter-spacing: 0.05em;
 	display: inline-block;
 	width: 1.7rem;
 	height: 1.6rem;
+	margin-right: 0.9rem;
 }
 
 .breadcrumb__inner span::before{

@@ -32,10 +32,6 @@ body {
 /*=========================================================
 # description
 =========================================================*/
-.description {
-  margin-top: 3.1rem;
-}
-
 .description__text {
   font-size: 1.3rem;
   letter-spacing: 0.05em;

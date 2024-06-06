@@ -10,7 +10,7 @@
 .category__items {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 1.2rem 1.6rem;
+	gap: 1.5rem 1.6rem;
 }
 
 .category__item {
@@ -19,7 +19,7 @@
 	font-weight: $medium;
 	color: $gold;
 	letter-spacing: 0.05em;
-	padding: 0.5rem;
+	padding: 0.55rem;
 	cursor: pointer;
 	border: 2px solid $gold;
 	border-radius: 1.65rem;

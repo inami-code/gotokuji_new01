@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3.8rem;
+  gap: 3.6rem;
 }
 
 .wp-pagenavi .previouspostslink,
@@ -23,6 +23,13 @@
   border-radius: 50%;
   position: relative;
   transition: background 0.3s;
+}
+.wp-pagenavi .previouspostslink{
+  margin-right: 0.5rem;
+}
+
+.wp-pagenavi .nextpostslink{
+  margin-left: 0.5rem;
 }
 
 .wp-pagenavi .previouspostslink:hover,
@@ -70,6 +77,7 @@
   color: $gold;
   font-size: 1.8rem;
   letter-spacing: 0.05em;
+  line-height: 1;
   transition: opacity .3s;
 }
 

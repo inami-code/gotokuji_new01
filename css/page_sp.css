@@ -77,11 +77,11 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 2rem;
+  gap: 1.8rem;
 }
 
 .page-fv__logo {
-  width: 7.25rem;
+  width: 7.6rem;
   aspect-ratio: 266/94;
 }
 
@@ -130,7 +130,7 @@ body {
 .category__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem 1.6rem;
+  gap: 1.5rem 1.6rem;
 }
 
 .category__item {
@@ -139,7 +139,7 @@ body {
   font-weight: 500;
   color: #a49a74;
   letter-spacing: 0.05em;
-  padding: 0.5rem;
+  padding: 0.55rem;
   cursor: pointer;
   border: 2px solid #a49a74;
   border-radius: 1.65rem;
@@ -162,7 +162,7 @@ body {
 .cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.8rem 1.5rem;
+  gap: 3.2rem 1.5rem;
 }
 
 /*=========================================================
@@ -181,7 +181,7 @@ body {
 .card__img {
   aspect-ratio: 300/300;
   overflow: hidden;
-  border-top-left-radius: 2.5rem;
+  border-top-left-radius: 1rem;
 }
 
 .card__img img {
@@ -206,18 +206,18 @@ body {
   letter-spacing: 0.05em;
   line-height: 2;
   color: #a49a74;
-  margin-top: 1.15rem;
+  margin-top: 0.5rem;
 }
 
 .card__name {
-  margin-top: 0.85rem;
+  margin-top: -0.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 0.9rem;
+  gap: 0.5rem;
 }
 
 .card__name h2 {
@@ -229,8 +229,8 @@ body {
 
 .card__icon {
   fill: #000;
-  height: 1.5rem;
-  width: 1.9rem;
+  height: 1rem;
+  width: 1.4rem;
 }
 
 .card__link {
@@ -258,7 +258,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 3.6rem;
+  gap: 3.5rem;
 }
 
 .wp-pagenavi .previouspostslink,
@@ -271,6 +271,14 @@ body {
   position: relative;
   -webkit-transition: background 0.3s;
   transition: background 0.3s;
+}
+
+.wp-pagenavi .previouspostslink {
+  margin-right: 0;
+}
+
+.wp-pagenavi .nextpostslink {
+  margin-left: 0;
 }
 
 .wp-pagenavi .previouspostslink:hover,
@@ -353,10 +361,6 @@ body {
 /*=========================================================
 # breadcrumb
 =========================================================*/
-.breadcrumb__inner.inner {
-  max-width: 114rem;
-}
-
 .breadcrumb__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -371,8 +375,8 @@ body {
 .breadcrumb__inner span {
   position: relative;
   display: inline-block;
-  width: 1.7rem;
-  height: 1.6rem;
+  width: 1.4rem;
+  height: 1.3rem;
 }
 
 .breadcrumb__inner span::before {
@@ -390,10 +394,17 @@ body {
 }
 
 /*=========================================================
+# sub-description
+=========================================================*/
+.sub-description {
+  margin-top: 3.1rem;
+}
+
+/*=========================================================
 # sub-category
 =========================================================*/
 .sub-category {
-  margin-top: 5.1rem;
+  margin-top: 5.3rem;
 }
 
 /*=========================================================
@@ -407,19 +418,19 @@ body {
 # sub-pagination
 =========================================================*/
 .sub-pagination {
-  margin-top: 6.3rem;
+  margin-top: 4.6rem;
 }
 
 /*=========================================================
 # sub-breadcrumb
 =========================================================*/
 .sub-breadcrumb {
-  margin-top: 15.8rem;
+  margin-top: 7.4rem;
 }
 
 /*=========================================================
 # sub-footer
 =========================================================*/
 .sub-footer {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }/*# sourceMappingURL=page_sp.css.map */
