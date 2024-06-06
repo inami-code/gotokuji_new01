@@ -10,7 +10,7 @@
 .category__items {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	gap: 2.4rem;
+	gap: clamp(10px,1.6vw,24px);
 }
 
 .category__item {

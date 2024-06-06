@@ -1,10 +1,9 @@
 @use "../global" as *;
 
 /*=========================================================
-# cards
+# sub-pagination
 =========================================================*/
-.cards{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 8rem clamp(30px,6vw,90px);
+
+.sub-pagination{
+  margin-top: 12.7rem;
 }

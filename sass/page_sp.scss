@@ -3,5 +3,10 @@
 @use "./module/content_sp";
 @use "./module/cards_sp";
 @use "./module/card_sp";
+@use "./module/pagination_sp";
+@use "./module/breadcrumb_sp";
 @use "./page/sub-category_sp";
 @use "./page/sub-content_sp";
+@use "./page/sub-pagination_sp";
+@use "./page/sub-breadcrumb_sp";
+@use "./page/sub-footer_sp";

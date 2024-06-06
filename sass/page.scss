@@ -3,5 +3,10 @@
 @use "./module/content";
 @use "./module/cards";
 @use "./module/card";
+@use "./module/pagination";
+@use "./module/breadcrumb";
 @use "./page/sub-category";
 @use "./page/sub-content";
+@use "./page/sub-pagination";
+@use "./page/sub-breadcrumb";
+@use "./page/sub-footer";

@@ -1,10 +1,8 @@
 @use "../global" as *;
 
 /*=========================================================
-# cards
+# sub-footer
 =========================================================*/
-.cards{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 8rem clamp(30px,6vw,90px);
+.sub-footer {
+  margin-top: 1rem;
 }
