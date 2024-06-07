@@ -3,26 +3,21 @@
 # hamburger
 =========================================================*/
 
+
 .hamburger {
 	height: 4.3rem;
 	position: relative;
 	width: 5.1rem;
-	z-index: 100;
+	z-index: 1000;
 }
 
 .hamburger span {
-	display: block;
 	background-color: $white;
 	border-radius: 1rem;
-	height: 0.35rem;
+	height: 0.3rem;
 	left: 0;
 	position: absolute;
 	transition: 0.5s;
-	width: inherit;
-}
-
-.hamburger.js-hamburger.transform span {
-	background-color: rgba(0, 0, 0, 1);
 }
 
 .hamburger span:nth-child(1) {
@@ -33,11 +28,12 @@
 .hamburger span:nth-child(2) {
 	top: 50%;
 	transform: translateY(-50%);
+	width: 100%;
 }
 
 .hamburger span:nth-child(3) {
 	bottom: 0;
-	width: 2.7rem;
+	width: 2.9rem;
 }
 
 .hamburger.is-active span {
@@ -58,6 +54,10 @@
 .hamburger.is-active span:nth-child(3) {
 	bottom: 46%;
 	left: -0.3rem;
-	transform: rotate(135deg);
+	transform: rotate(-45deg);
 	width: 5.8rem;
+}
+
+.es-header-btn{
+	color:#000
 }
