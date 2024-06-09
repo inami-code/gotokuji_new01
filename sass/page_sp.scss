@@ -5,9 +5,15 @@
 @use "./module/card_sp";
 @use "./module/pagination_sp";
 @use "./module/breadcrumb_sp";
+@use "./module/article_sp";
+@use "./module/single-pagination_sp";
+@use "./module/return-button_sp";
 @use "./page/sub-description_sp";
 @use "./page/sub-category_sp";
 @use "./page/sub-content_sp";
 @use "./page/sub-pagination_sp";
 @use "./page/sub-breadcrumb_sp";
 @use "./page/sub-footer_sp";
+@use "./page/sub-article_sp";
+@use "./page/sub-single-pagination_sp";
+@use "./page/sub-single-breadcrumb_sp";

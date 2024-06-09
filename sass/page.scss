@@ -5,9 +5,15 @@
 @use "./module/card";
 @use "./module/pagination";
 @use "./module/breadcrumb";
+@use "./module/article";
+@use "./module/single-pagination";
+@use "./module/return-button";
 @use "./page/sub-description";
 @use "./page/sub-category";
 @use "./page/sub-content";
 @use "./page/sub-pagination";
 @use "./page/sub-breadcrumb";
 @use "./page/sub-footer";
+@use "./page/sub-article";
+@use "./page/sub-single-pagination";
+@use "./page/sub-single-breadcrumb";

@@ -1,0 +1,129 @@
+@use "../global" as *;
+
+/*=========================================================
+# article
+=========================================================*/
+.article__inner.inner {
+  max-width: 88rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.article__category {
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  color: $gold;
+  font-feature-settings: "palt";
+}
+
+.article__title {
+  font-size: 1.7rem;
+  letter-spacing: 0.09em;
+  font-feature-settings: "palt";
+}
+
+.article__thumbnail {
+  margin-top: 0.8rem;
+  aspect-ratio: 820 / 547;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.article__thumbnail img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.article__description {
+  margin-top: 1.1rem;
+  font-size: 1.3rem;
+  font-weight: $light;
+  line-height: calc(27 / 13);
+  letter-spacing: 0.05em;
+  font-feature-settings: "palt";
+}
+
+.article__content {
+  margin-top: 3.4rem;
+}
+
+.article__content-item:not(:first-child) {
+  margin-top: 3.3rem;
+}
+
+.article__content-item img {
+  display: block;
+  max-width: 100vw;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 calc(50% - 50vw);
+}
+
+.article__content-item p {
+  font-size: 1.3rem;
+  font-weight: $light;
+  line-height: calc(27 / 13);
+  letter-spacing: 0.15em;
+  font-feature-settings: "palt";
+  margin-top: 0.7rem;
+}
+
+.article__info {
+  margin-top: 2.2rem;
+}
+
+.article__info dl {
+  display: flex;
+  border-top: 1px solid #d1d1d1;
+  background-color: #f6f6f6;
+}
+
+.article__info dt,
+.article__info dd {
+  padding-top: 0.55rem;
+  padding-bottom: 0.25rem;
+}
+
+.article__info dt {
+  padding-left: 1.1em;
+  padding-right: 0.5em;
+  flex: 0 0 9rem;
+  font-size: 1.3rem;
+  font-weight: $light;
+  line-height: calc(27 / 13);
+  letter-spacing: 0.15em;
+  font-feature-settings: "palt";
+}
+
+.article__info dd {
+  padding-left: 1.7rem;
+  background-color: $white;
+  flex: 0 1 100%;
+  word-break: break-all;
+  font-size: 1.3em;
+  font-weight: $light;
+  line-height: calc(27 / 13);
+  letter-spacing: 0.15em;
+  font-feature-settings: "palt";
+}
+
+.article__map {
+  margin-top: 2.65rem;
+}
+
+.article__map iframe {
+  width: 100%;
+  aspect-ratio: 16/11.2;
+}
+
+.article__map p {
+  font-size: 1.1rem;
+  font-weight: $light;
+  line-height: calc(16 / 11);
+  letter-spacing: 0.15em;
+  font-feature-settings: "palt";
+  margin-top: 0.8rem;
+}
