@@ -30,13 +30,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
   <!-- css -->
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/site-common.css">
-  <link rel="stylesheet" href="../css/site-common_sp.css" media="all and (max-width:767px)">
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/index_tab.css" media="all and (max-width:1199px)">
-  <link rel="stylesheet" href="../css/index_sp.css" media="all and (max-width:767px)">
+  <link rel="stylesheet" href="../css/reset.css?ver=1.0.1">
+  <link rel="stylesheet" href="../css/base.css?ver=1.0.1">
+  <link rel="stylesheet" href="../css/site-common.css?ver=1.0.1">
+  <link rel="stylesheet" href="../css/site-common_sp.css?ver=1.0.1" media="all and (max-width:767px)">
+  <link rel="stylesheet" href="../css/page.css?ver=1.0.1">
+  <link rel="stylesheet" href="../css/page_sp.css?ver=1.0.1" media="all and (max-width:767px)">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="../common/libs/script.js"></script>
@@ -76,22 +75,22 @@
           </div>
           <ul class="nav__items">
             <li class="nav__item">
-              <a href="#">
+              <a href="../index.html">
                 <p>TOP</p>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#">
+              <a href="../yamashita-st/">
                 <p>山下商店街エリア</p>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#">
+              <a href="index.html">
                 <p>豪徳寺商店街エリア</p>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#">
+              <a href="../goutokuji/">
                 <p>豪徳寺エリア</p>
               </a>
             </li>
@@ -117,30 +116,36 @@
       </div>
     </nav>
   </header>
+  
   <main>
     <div class="over-wrap">
 
-      <div class="fv js-fv">
-        <div class="fv__inner">
-          <div class="fv__container">
-            <div class="fv__img">
+      <div class="page-fv js-fv">
+        <div class="page-fv__inner">
+          <div class="page-fv__container">
+            <div class="page-fv__img">
               <picture>
-                <source srcset="../images/top_fv.webp" type="image/webp">
-                <img src="../images/top_fv.jpg" alt="ねこさんとおさんぽ豪徳寺" width="1500" height="700" loading="lazy">
+                <source srcset="./images/area-syotengai_fv.webp" type="image/webp">
+                <img src="./images/area-syotengai_fv.jpg" alt="ねこさんとおさんぽ豪徳寺" width="1500" height="700" loading="lazy">
               </picture>
             </div>
-            <div class="fv__title">
-              <div class="fv__title-wrap">
-                <h1 class="fv__logo">
-                  <picture>
-                    <source srcset="../common/images/site_logo.webp" type="image/webp">
-                    <img src="../common/images/site_logo.png" alt="ねこさんとおさんぽ豪徳寺" width="266" height="94" loading="lazy">
-                  </picture>
-                </h1>
-                <div class="fv__cat">
+            <div class="page-fv__title">
+              <div class="page-fv__title-wrap">
+                <div class="page-fv__title-item">
+                  <h1 class="page-fv__logo">
+                    <picture>
+                      <source srcset="../common/images/site_logo.webp" type="image/webp">
+                      <img src="../common/images/site_logo.png" alt="ねこさんとおさんぽ豪徳寺 豪徳寺商店街エリア" width="266" height="94"
+                        loading="lazy">
+                    </picture>
+                  </h1>
+                  <div class="page-fv__area">豪徳寺商店街エリア</div>
+                </div>
+                <div class="page-fv__cat">
                   <picture>
                     <source srcset="../common/images/icon_cat.webp" type="image/webp">
-                    <img src="../common/images/icon_cat.png" alt="ねこさんとおさんぽ豪徳寺招き猫" width="67" height="71" loading="lazy">
+                    <img src="../common/images/icon_cat.png" alt="ねこさんとおさんぽ豪徳寺招き猫" width="67" height="71"
+                      loading="lazy">
                   </picture>
                 </div>
               </div>
@@ -149,20 +154,245 @@
         </div>
       </div>
 
-      <div class="description">
+      <div class="description sub-description fadeDownTrigger">
         <div class="description__inner inner">
           <p class="description__text">
-            招き猫で有名な大谿山豪徳寺へは小田急線豪徳寺駅と世田谷線山下駅から徒歩で約15分。<br>
-            豪徳寺駅の北側には山下商店街、南側には豪徳寺商店街が広がっています。<br>
-            レトロモダンな雰囲気の中、最近話題のスイーツ店も点在して、食べ歩きが楽しめるスポットです。<br>
-            ぶらり食べて・見て・楽しみながら、豪徳寺のねこたちに会いにいってみませんか？
+            小田急線「豪徳寺」駅より南へ広がる「豪徳寺商店街」はかつては豪徳寺の参道でした。<br>
+            別名「たまにゃん通り」とも呼ばれています。<br>
+            約100年の歴史をもつ豪徳寺市場や通りには新しい個性的なショップも増えて、<br class="u-desktop">
+            食べ歩きにぴったりなスイーツも点在しています。
           </p>
+        </div>
+      </div>
+
+      <div class="category sub-category fadeDownTrigger">
+        <div class="category__inner inner">
+          <ul class="category__items">
+            <!-- category__item -->
+            <li class="category__item is-active">
+              すべて
+            </li>
+            <!-- category__item -->
+            <li class="category__item">
+              飲食店
+            </li>
+            <!-- category__item -->
+            <li class="category__item">
+              ショップ
+            </li>
+            <!-- category__item -->
+            <li class="category__item">
+              ニュース
+            </li>
+            <!-- category__item -->
+            <li class="category__item">
+              ねこ
+            </li>
+            <!-- category__item -->
+            <li class="category__item">
+              見どころ
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="content sub-content">
+        <div class="content__inner inner">
+          <div class="content__items cards">
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img01.webp" type="image/webp">
+                  <img src="../common/images/article_img01.jpg" alt="コトリベーカリー" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">飲食店</div>
+              <div class="card__name">
+                <h2>コトリベーカリー</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img02.webp" type="image/webp">
+                  <img src="../common/images/article_img02.jpg" alt="SAKATAYA1793" width="300" height="300"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">飲食店</div>
+              <div class="card__name">
+                <h2>SAKATAYA1793</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img03.webp" type="image/webp">
+                  <img src="../common/images/article_img03.jpg" alt="プチプラム" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">飲食店</div>
+              <div class="card__name">
+                <h2>プチプラム</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img04.webp" type="image/webp">
+                  <img src="../common/images/article_img04.jpg" alt="おじか" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">飲食店</div>
+              <div class="card__name">
+                <h2>おじか</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img05.webp" type="image/webp">
+                  <img src="../common/images/article_img05.jpg" alt="Table" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">飲食店</div>
+              <div class="card__name">
+                <h2>Table</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img06.webp" type="image/webp">
+                  <img src="../common/images/article_img06.jpg" alt="うつわのわ田" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">ショップ</div>
+              <div class="card__name">
+                <h2>うつわのわ田</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img07.webp" type="image/webp">
+                  <img src="../common/images/article_img07.jpg" alt="山下商店街夏のスタンプラリー2023" width="300" height="300"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">ニュース</div>
+              <div class="card__name">
+                <h2>山下商店街夏のスタンプラリー2023</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img08.webp" type="image/webp">
+                  <img src="../common/images/article_img08.jpg" alt="東肥軒" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">飲食店</div>
+              <div class="card__name">
+                <h2>東肥軒</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img09.webp" type="image/webp">
+                  <img src="../common/images/article_img09.jpg" alt="上保商店～豪徳寺煎餅～" width="300" height="300"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">飲食店</div>
+              <div class="card__name">
+                <h2>上保商店～豪徳寺煎餅～</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img10.webp" type="image/webp">
+                  <img src="../common/images/article_img10.jpg" alt="東急線幸福の招き猫電車" width="300" height="300"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">ねこ</div>
+              <div class="card__name">
+                <h2>東急線幸福の招き猫電車</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img11.webp" type="image/webp">
+                  <img src="../common/images/article_img11.jpg" alt="春のミニやちむん市 東京のやちむん市" width="300" height="300"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">見どころ</div>
+              <div class="card__name">
+                <h2>春のミニやちむん市&emsp;東京のやちむん市</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="single.html" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img12.webp" type="image/webp">
+                  <img src="../common/images/article_img12.jpg" alt="ねこ電車世田谷" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">ねこ</div>
+              <div class="card__name">
+                <div class="card__icon">
+                  <svg class="card__link">
+                    <use href="#icon-link"></use>
+                  </svg>
+                </div>
+                <h2>ねこ電車世田谷</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination sub-pagination">
+        <div class="pagination__inner inner">
+          <div class="wp-pagenavi">
+            <a class="previouspostslink" rel="prev" href="#">
+            </a>
+            <span class="current">1</span>
+            <a class="page larger" title="Page 2" href="#">2</a>
+            <a class="page larger" title="Page 3" href="#">3</a>
+            <a class="page larger" title="Page 4" href="#">4</a>
+            <a class="page larger" title="Page 5" href="#">5</a>
+            <a class="nextpostslink" rel="next" href="#"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="breadcrumb sub-breadcrumb">
+        <div class="breadcrumb__inner inner">
+          <div><span></span>&gt;&ensp;豪徳寺商店街エリア</div>
         </div>
       </div>
 
     </div>
   </main>
-  <footer class="footer top-footer">
+  <footer class="footer sub-footer">
     <div class="footer__inner">
       <p class="footer__text">当サイトは<a href="https://orange-d.jp/" target="_blank">オレンジデザイン株式会社</a>が制作したサイトです。<br>
         豪徳寺と招き猫が大好きで、多くの方に訪れてほしい、と願って作成しました。</p>
