@@ -67,7 +67,7 @@ body {
   height: inherit;
 }
 
-.page-fv__h1 {
+.page-fv__title-item {
   position: absolute;
   content: "";
   bottom: 0;
@@ -466,7 +466,6 @@ body {
 .article__description {
   margin-top: 3rem;
   font-size: 1.6rem;
-  font-weight: 300;
   line-height: 1.875;
   letter-spacing: 0.15em;
   -webkit-font-feature-settings: "palt";
@@ -491,7 +490,6 @@ body {
 
 .article__content-item p {
   font-size: 1.6rem;
-  font-weight: 300;
   line-height: 1.875;
   letter-spacing: 0.15em;
   -webkit-font-feature-settings: "palt";
@@ -528,7 +526,6 @@ body {
       -ms-flex: 0 0 15rem;
           flex: 0 0 15rem;
   font-size: 1.6rem;
-  font-weight: 300;
   line-height: 1.875;
   letter-spacing: 0.15em;
   -webkit-font-feature-settings: "palt";
@@ -543,7 +540,6 @@ body {
           flex: 0 1 100%;
   word-break: break-all;
   font-size: 1.6rem;
-  font-weight: 300;
   line-height: 1.875;
   letter-spacing: 0.15em;
   -webkit-font-feature-settings: "palt";
@@ -561,14 +557,13 @@ body {
 
 .article__map p {
   font-size: 1.5rem;
-  font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0.15em;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   margin-top: 1.7rem;
   padding-left: 1.1em;
-  text-indent: -1em;
+  text-indent: -1.15em;
 }
 
 /*=========================================================

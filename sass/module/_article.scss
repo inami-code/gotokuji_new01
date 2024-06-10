@@ -37,7 +37,6 @@
 .article__description {
   margin-top: 3rem;
   font-size: 1.6rem;
-  font-weight: $light;
   line-height: calc(30 / 16);
   letter-spacing: 0.15em;
   font-feature-settings: "palt";
@@ -61,7 +60,6 @@
 
 .article__content-item p {
   font-size: 1.6rem;
-  font-weight: $light;
   line-height: calc(30 / 16);
   letter-spacing: 0.15em;
   font-feature-settings: "palt";
@@ -93,7 +91,6 @@
   padding-right: 0.8rem;
   flex: 0 0 15rem;
   font-size: 1.6rem;
-  font-weight: $light;
   line-height: calc(30 / 16);
   letter-spacing: 0.15em;
   font-feature-settings: "palt";
@@ -105,7 +102,6 @@
   flex: 0 1 100%;
   word-break: break-all;
   font-size: 1.6rem;
-  font-weight: $light;
   line-height: calc(30 / 16);
   letter-spacing: 0.15em;
   font-feature-settings: "palt";
@@ -121,12 +117,11 @@
 }
 
 .article__map p {
-  font-size: 1.5rem;
-  font-weight: $light;
+  font-size: 1.5rem;  
   line-height: calc(24 / 15);
   letter-spacing: 0.15em;
   font-feature-settings: "palt";
   margin-top: 1.7rem;
   padding-left: 1.1em;
-  text-indent: -1em;
+  text-indent: -1.15em;
 }

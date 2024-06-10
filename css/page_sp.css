@@ -56,7 +56,7 @@ body {
   height: inherit;
 }
 
-.page-fv__h1 {
+.page-fv__title-item {
   position: absolute;
   content: "";
   bottom: 0;
@@ -258,7 +258,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 3.5rem;
+  gap: clamp(2.7rem, 0.1rem + 9.55vw, 3.5rem);
 }
 
 .wp-pagenavi .previouspostslink,
@@ -435,7 +435,6 @@ body {
 .article__description {
   margin-top: 1.1rem;
   font-size: 1.3rem;
-  font-weight: 300;
   line-height: 2.0769230769;
   letter-spacing: 0.05em;
   -webkit-font-feature-settings: "palt";
@@ -462,7 +461,6 @@ body {
 
 .article__content-item p {
   font-size: 1.3rem;
-  font-weight: 300;
   line-height: 2.0769230769;
   letter-spacing: 0.15em;
   -webkit-font-feature-settings: "palt";
@@ -495,7 +493,6 @@ body {
       -ms-flex: 0 0 9rem;
           flex: 0 0 9rem;
   font-size: 1.3rem;
-  font-weight: 300;
   line-height: 2.0769230769;
   letter-spacing: 0.15em;
   -webkit-font-feature-settings: "palt";
@@ -510,7 +507,6 @@ body {
           flex: 0 1 100%;
   word-break: break-all;
   font-size: 1.3em;
-  font-weight: 300;
   line-height: 2.0769230769;
   letter-spacing: 0.15em;
   -webkit-font-feature-settings: "palt";
@@ -528,7 +524,6 @@ body {
 
 .article__map p {
   font-size: 1.1rem;
-  font-weight: 300;
   line-height: 1.4545454545;
   letter-spacing: 0.15em;
   -webkit-font-feature-settings: "palt";

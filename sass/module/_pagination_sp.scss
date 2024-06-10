@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3.5rem;
+  gap: clamp(2.7rem, 0.1rem + 9.55vw, 3.5rem);
 }
 
 .wp-pagenavi .previouspostslink,
@@ -24,11 +24,12 @@
   position: relative;
   transition: background 0.3s;
 }
-.wp-pagenavi .previouspostslink{
+
+.wp-pagenavi .previouspostslink {
   margin-right: 0;
 }
 
-.wp-pagenavi .nextpostslink{
+.wp-pagenavi .nextpostslink {
   margin-left: 0;
 }
 
