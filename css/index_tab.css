@@ -44,6 +44,7 @@ body {
 
 .info__item03 {
   bottom: -31rem;
+  z-index: -1;
 }
 
 .info__content.info__content--02 .info__content-left {

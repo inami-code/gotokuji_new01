@@ -45,6 +45,7 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 100%;
+  bottom: -0.08rem;
   background-image: url(../../common/images/site_circle.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -168,16 +169,6 @@ body {
 /*=========================================================
 # card
 =========================================================*/
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .card__img {
   aspect-ratio: 300/300;
   overflow: hidden;
@@ -258,7 +249,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: clamp(2.7rem, 0.1rem + 9.55vw, 3.5rem);
+  gap: clamp(1.5rem, -0.1rem + 9.55vw, 3.5rem);
 }
 
 .wp-pagenavi .previouspostslink,

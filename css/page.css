@@ -193,16 +193,6 @@ body {
 /*=========================================================
 # card
 =========================================================*/
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .card__img {
   aspect-ratio: 300/300;
   overflow: hidden;

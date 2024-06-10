@@ -678,6 +678,7 @@ body {
       -ms-flex-align: end;
           align-items: flex-end;
   gap: 1.5rem;
+  z-index: -1;
 }
 
 .info__item03-img {
