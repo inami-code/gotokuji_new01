@@ -97,3 +97,23 @@
 	object-fit: cover;
 	width: 100%;
 }
+
+/* 招き猫ページのみ
+--------------------------------------------------*/
+.page-fv__manekineko-img{
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	max-width: 1190px;
+	width: 100%;
+	transform: translate(-50%,-50%);
+	aspect-ratio: 2231 / 690;
+	padding: 0 3rem;
+}
+
+.page-fv__manekineko-img img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}

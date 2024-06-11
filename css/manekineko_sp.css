@@ -1,1 +1,28 @@
-/*# sourceMappingURL=manekineko_sp.css.map */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #000;
+  font-weight: 400;
+}
+
+.u-desktop {
+  display: block;
+}
+
+.u-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .u-desktop {
+    display: none;
+  }
+  .u-mobile {
+    display: block;
+  }
+}
+/*=========================================================
+# content
+=========================================================*/
+.manekineko-content__inner.inner {
+  max-width: 114rem;
+}/*# sourceMappingURL=manekineko_sp.css.map */

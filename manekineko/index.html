@@ -13,7 +13,7 @@
   <!-- ogp -->
   <meta property="og:title" content="招き猫グッズ紹介｜ねこさんとおさんぽ 豪徳寺">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://neko-goutokuji.tokyo/yamashita-st/">
+  <meta property="og:url" content="https://neko-goutokuji.tokyo/manekineko/">
   <meta property="og:image" content="https://neko-goutokuji.tokyo/common/images/ogp.jpg">
   <meta property="og:site_name" content="招き猫グッズ紹介｜ねこさんとおさんぽ 豪徳寺">
   <meta property="og:description" content="招き猫や豪徳寺に関連した可愛いグッズやスイーツを集めてご紹介しています。">
@@ -30,13 +30,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
   <!-- css -->
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/base.css">
-  <link rel="stylesheet" href="../css/site-common.css">
-  <link rel="stylesheet" href="../css/site-common_sp.css" media="all and (max-width:767px)">
-  <link rel="stylesheet" href="../css/index.css">
-  <link rel="stylesheet" href="../css/index_tab.css" media="all and (max-width:1199px)">
-  <link rel="stylesheet" href="../css/index_sp.css" media="all and (max-width:767px)">
+  <link rel="stylesheet" href="../css/reset.css?ver=1.0.1">
+  <link rel="stylesheet" href="../css/base.css?ver=1.0.1">
+  <link rel="stylesheet" href="../css/site-common.css?ver=1.0.1">
+  <link rel="stylesheet" href="../css/site-common_sp.css?ver=1.0.1" media="all and (max-width:767px)">
+  <link rel="stylesheet" href="../css/page.css?ver=1.0.1">
+  <link rel="stylesheet" href="../css/page_sp.css?ver=1.0.1" media="all and (max-width:767px)">
+  <link rel="stylesheet" href="../css/manekineko.css?ver=1.0.1">
+  <link rel="stylesheet" href="../css/manekineko_sp.css?ver=1.0.1" media="all and (max-width:767px)">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="../common/libs/script.js"></script>
@@ -76,22 +77,22 @@
           </div>
           <ul class="nav__items">
             <li class="nav__item">
-              <a href="#">
+              <a href="../index.html">
                 <p>TOP</p>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#">
+              <a href="index.html">
                 <p>山下商店街エリア</p>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#">
+              <a href="../goutokuji-st/">
                 <p>豪徳寺商店街エリア</p>
               </a>
             </li>
             <li class="nav__item">
-              <a href="#">
+              <a href="../goutokuji/">
                 <p>豪徳寺エリア</p>
               </a>
             </li>
@@ -117,30 +118,43 @@
       </div>
     </nav>
   </header>
+  
   <main>
     <div class="over-wrap">
 
-      <div class="fv js-fv">
-        <div class="fv__inner">
-          <div class="fv__container">
-            <div class="fv__img">
+      <div class="page-fv js-fv">
+        <div class="page-fv__inner">
+          <div class="page-fv__container">
+            <div class="page-fv__img">
               <picture>
-                <source srcset="../images/top_fv.webp" type="image/webp">
-                <img src="../images/top_fv.jpg" alt="ねこさんとおさんぽ豪徳寺" width="1500" height="700" loading="lazy">
+                <source srcset="./images/manekineko_fv.webp" type="image/webp">
+                <img src="./images/manekineko_fv.webp.jpg" alt="ねこさんとおさんぽ豪徳寺" width="1500" height="700" loading="lazy">
               </picture>
             </div>
-            <div class="fv__title">
-              <div class="fv__title-wrap">
-                <h1 class="fv__logo">
-                  <picture>
-                    <source srcset="../common/images/site_logo.webp" type="image/webp">
-                    <img src="../common/images/site_logo.png" alt="ねこさんとおさんぽ豪徳寺" width="266" height="94" loading="lazy">
-                  </picture>
-                </h1>
-                <div class="fv__cat">
+            <div class="page-fv__manekineko-img">
+              <picture>
+                <source srcset="./images/manekineko_fv-item_sp.webp" media="(max-width: 767px)" type="image/webp">
+                <source srcset="./images/manekineko_fv-item.webp" type="image/webp">
+                <img src="./images/manekineko_fv-item.jpg" alt="ねこさんとおさんぽ豪徳寺" width="1190" height="343" loading="lazy">
+              </picture>
+            </div>
+            <div class="page-fv__title">
+              <div class="page-fv__title-wrap">
+                <div class="page-fv__title-item">
+                  <h1 class="page-fv__logo">
+                    <picture>
+                      <source srcset="../common/images/site_logo.webp" type="image/webp">
+                      <img src="../common/images/site_logo.png" alt="ねこさんとおさんぽ豪徳寺 招き猫グッズ" width="266" height="94"
+                        loading="lazy">
+                    </picture>
+                  </h1>
+                  <div class="page-fv__area">招き猫グッズ</div>
+                </div>
+                <div class="page-fv__cat">
                   <picture>
                     <source srcset="../common/images/icon_cat.webp" type="image/webp">
-                    <img src="../common/images/icon_cat.png" alt="ねこさんとおさんぽ豪徳寺招き猫" width="67" height="71" loading="lazy">
+                    <img src="../common/images/icon_cat.png" alt="ねこさんとおさんぽ豪徳寺招き猫" width="67" height="71"
+                      loading="lazy">
                   </picture>
                 </div>
               </div>
@@ -149,20 +163,173 @@
         </div>
       </div>
 
-      <div class="description">
+      <div class="description sub-description fadeDownTrigger">
         <div class="description__inner inner">
           <p class="description__text">
-            招き猫で有名な大谿山豪徳寺へは小田急線豪徳寺駅と世田谷線山下駅から徒歩で約15分。<br>
-            豪徳寺駅の北側には山下商店街、南側には豪徳寺商店街が広がっています。<br>
-            レトロモダンな雰囲気の中、最近話題のスイーツ店も点在して、食べ歩きが楽しめるスポットです。<br>
-            ぶらり食べて・見て・楽しみながら、豪徳寺のねこたちに会いにいってみませんか？
+            招き猫グッズの説明文招き猫グッズの説明文<br>
+            招き猫グッズの説明文招き猫グッズの説明文<br>
+            招き猫グッズの説明文招き猫グッズの説明文<br>
+            招き猫グッズの説明文招き猫グッズの説明文
           </p>
+        </div>
+      </div>
+
+      <section class="manekineko-content sub-manekineko-content">
+        <div class="manekineko-content__inner inner">
+          <div class="manekineko-content__items cards">
+            <!-- card -->
+            <a href="" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img12.webp" type="image/webp">
+                  <img src="../common/images/article_img12.jpg" alt="招き猫電車ラバーホルダー" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">ねこ電車世田谷</div>
+              <div class="card__name card__name--white">
+                <div class="card__icon">
+                  <svg class="card__link">
+                    <use href="#icon-link"></use>
+                  </svg>
+                </div>
+                <h2>招き猫電車ラバーホルダー</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img13.webp" type="image/webp">
+                  <img src="../common/images/article_img13.jpg" alt="豪徳寺招き猫の箸置き" width="300" height="300"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">うつわのわ田</div>
+              <div class="card__name card__name--white">
+                <h2>豪徳寺招き猫の箸置き</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img14.webp" type="image/webp">
+                  <img src="../common/images/article_img14.jpg" alt="まねきねこどら" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">まほろ堂蒼月</div>
+              <div class="card__name card__name--white">
+                <h2>まねきねこどら</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img15.webp" type="image/webp">
+                  <img src="../common/images/article_img15.jpg" alt="エコバッグ（ベルト付） 絵馬（観音様・干支）" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">豪徳寺</div>
+              <div class="card__name card__name--white">
+                <h2>エコバッグ（ベルト付）<br>
+                  絵馬（観音様・干支）</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img16.webp" type="image/webp">
+                  <img src="../common/images/article_img16.jpg" alt="主張しすぎるもなか" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">RARASAND（ララサンド）</div>
+              <div class="card__name card__name--white">
+                <h2>主張しすぎるもなか</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img17.webp" type="image/webp">
+                  <img src="../common/images/article_img17.jpg" alt="招福もなか" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">亀屋経堂店</div>
+              <div class="card__name card__name--white">
+                <h2>招福もなか</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img15.webp" type="image/webp">
+                  <img src="../common/images/article_img15.jpg" alt="エコバッグ（ベルト付） 絵馬（観音様・干支）" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">豪徳寺</div>
+              <div class="card__name card__name--white">
+                <h2>エコバッグ（ベルト付）<br>
+                  絵馬（観音様・干支）</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img16.webp" type="image/webp">
+                  <img src="../common/images/article_img16.jpg" alt="主張しすぎるもなか" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">RARASAND（ララサンド）</div>
+              <div class="card__name card__name--white">
+                <h2>主張しすぎるもなか</h2>
+              </div>
+            </a>
+            <!-- card -->
+            <a href="" class="cards__item card fadeDownTrigger">
+              <div class="card__img">
+                <picture>
+                  <source srcset="../common/images/article_img17.webp" type="image/webp">
+                  <img src="../common/images/article_img17.jpg" alt="招福もなか" width="300" height="300" loading="lazy">
+                </picture>
+              </div>
+              <div class="card__category">亀屋経堂店</div>
+              <div class="card__name card__name--white">
+                <h2>招福もなか</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="pagination pagination--bg">
+        <div class="pagination__inner inner">
+          <div class="wp-pagenavi">
+            <a class="previouspostslink" rel="prev" href="#">
+            </a>
+            <span class="current">1</span>
+            <a class="page larger" title="Page 2" href="#">2</a>
+            <a class="page larger" title="Page 3" href="#">3</a>
+            <a class="page larger" title="Page 4" href="#">4</a>
+            <a class="page larger" title="Page 5" href="#">5</a>
+            <a class="nextpostslink" rel="next" href="#"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="breadcrumb sub-manekineko-breadcrumb">
+        <div class="breadcrumb__inner inner">
+          <div><span></span>&gt;&ensp;招き猫グッズ</div>
         </div>
       </div>
 
     </div>
   </main>
-  <footer class="footer top-footer">
+  <footer class="footer sub-footer">
     <div class="footer__inner">
       <p class="footer__text">当サイトは<a href="https://orange-d.jp/" target="_blank">オレンジデザイン株式会社</a>が制作したサイトです。<br>
         豪徳寺と招き猫が大好きで、多くの方に訪れてほしい、と願って作成しました。</p>

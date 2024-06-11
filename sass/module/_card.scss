@@ -17,7 +17,7 @@
   transition: transform .6s;
 }
 
-.card:hover .card__img img{
+.card:hover .card__img img {
   transform: scale(1.1);
 }
 
@@ -32,11 +32,11 @@
 .card__name {
   margin-top: 0.3rem;
   display: flex;
-	align-items: center;
-	gap: 0.9rem;
+  align-items: center;
+  gap: 0.9rem;
 }
 
-.card__name h2{
+.card__name h2 {
   font-size: 1.6rem;
   letter-spacing: 0.05em;
   line-height: calc(24 / 16);
@@ -44,17 +44,32 @@
   font-weight: $medium;
 }
 
+/* 招き猫ページ
+--------------------------------------------------*/
 
+.card__name.card__name--white h2 {
+  color: $white;
+}
+
+/*--------------------------------------------------*/
 .card__icon {
-	fill: $black;
-	height: 1.5rem;
-	width: 2rem;
+  fill: $black;
+  height: 1.5rem;
+  width: 2rem;
   margin-top: 0.3rem;
 }
 
+/* 招き猫ページ
+--------------------------------------------------*/
+.card__name.card__name--white .card__icon {
+  fill: $white;
+}
+
+/*--------------------------------------------------*/
+
 .card__link {
-display: block;
-width: 100%;
-height: 100%;
-object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

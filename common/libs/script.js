@@ -23,20 +23,20 @@ jQuery(function ($) {
     $(".js-header").removeClass("is-active");
   });
 
-  //  ハンバーガーメニュー展開時背景を固定
-  $(".js-hamburger,.nav__item a").click(function () {
-    if ($("body").css("overflow") === "hidden") {
-      $("body").css({
-        height: "",
-        overflow: "scroll"
-      });
-    } else {
-      $("body").css({
-        height: "100%",
-        overflow: "hidden"
-      });
-    }
-  });
+  // //  ハンバーガーメニュー展開時背景を固定
+  // $(".js-hamburger,.nav__item a").click(function () {
+  //   if ($("body").css("overflow") === "hidden") {
+  //     $("body").css({
+  //       height: "",
+  //       overflow: "scroll"
+  //     });
+  //   } else {
+  //     $("body").css({
+  //       height: "100%",
+  //       overflow: "hidden"
+  //     });
+  //   }
+  // });
 
 
   $(document).ready(function () {

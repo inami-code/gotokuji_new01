@@ -1,1 +1,47 @@
-/*# sourceMappingURL=manekineko.css.map */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #000;
+  font-weight: 400;
+}
+
+.u-desktop {
+  display: block;
+}
+
+.u-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .u-desktop {
+    display: none;
+  }
+  .u-mobile {
+    display: block;
+  }
+}
+/*=========================================================
+# content
+=========================================================*/
+.manekineko-content {
+  background-color: #b82e04;
+  padding-top: 6.4rem;
+}
+
+.manekineko-content__inner.inner {
+  max-width: 114rem;
+}
+
+/*=========================================================
+# sub-manekineko-content
+=========================================================*/
+.sub-manekineko-content {
+  margin-top: 13.5rem;
+}
+
+/*=========================================================
+# sub-manekineko-breadcrumb
+=========================================================*/
+.sub-manekineko-breadcrumb {
+  margin-top: 3.2rem;
+}/*# sourceMappingURL=manekineko.css.map */
