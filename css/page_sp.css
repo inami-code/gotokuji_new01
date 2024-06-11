@@ -547,11 +547,12 @@ body {
 .single-pagination__next {
   padding: 0.282rem 0;
   font-size: 1.3rem;
-  line-height: 1.875;
   letter-spacing: 0.05em;
   position: relative;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  word-break: break-all;
+  width: 50%;
 }
 
 .single-pagination__prev {
@@ -560,6 +561,7 @@ body {
 
 .single-pagination__next {
   padding-right: 3.6rem;
+  text-align: right;
 }
 
 .single-pagination__prev:hover,

@@ -573,19 +573,23 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
 }
 
 .single-pagination__prev,
 .single-pagination__next {
   padding: 0.8rem 0;
   font-size: 1.6rem;
-  line-height: 1.875;
+  line-height: 1.5;
   letter-spacing: 0.05em;
   -webkit-font-feature-settings: "palt";
           font-feature-settings: "palt";
   position: relative;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
+  word-break: break-all;
+  width: 50%;
 }
 
 .single-pagination__prev {
@@ -594,6 +598,7 @@ body {
 
 .single-pagination__next {
   padding-right: 6rem;
+  text-align: right;
 }
 
 .single-pagination__prev:hover,

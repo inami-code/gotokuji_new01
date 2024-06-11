@@ -11,17 +11,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
 }
 
 .single-pagination__prev,
 .single-pagination__next {
   padding: 0.8rem 0;
   font-size: 1.6rem;
-  line-height: calc(30 / 16);
+  line-height: calc(24 / 16);
   letter-spacing: 0.05em;
   font-feature-settings: "palt";
   position: relative;
   transition: opacity .3s;
+  word-break: break-all;
+  width: 50%;
 }
 
 .single-pagination__prev {
@@ -30,6 +34,7 @@
 
 .single-pagination__next {
   padding-right: 6rem;
+  text-align: right;
 }
 
 .single-pagination__prev:hover,

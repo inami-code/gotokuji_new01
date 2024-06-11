@@ -19,10 +19,11 @@
 .single-pagination__next {
   padding: 0.282rem 0;
   font-size: 1.3rem;
-  line-height: calc(30 / 16);
   letter-spacing: 0.05em;
   position: relative;
   transition: opacity .3s;
+  word-break: break-all;
+  width: 50%;
 }
 
 .single-pagination__prev {
@@ -31,6 +32,7 @@
 
 .single-pagination__next {
   padding-right: 3.6rem;
+  text-align: right;
 }
 
 .single-pagination__prev:hover,
