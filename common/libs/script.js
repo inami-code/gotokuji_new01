@@ -130,18 +130,3 @@ $(document).ready(function () {
   $(window).on('scroll resize', checkInView);
   $(window).trigger('scroll');
 });
-
-
-$(function() {
-  $('.js-modal-open').on('click', function(e) {
-     e.preventDefault();
-     var target = $(this).data('target');
-     $(target).fadeIn();
-   });  
- 
- $('.js-modal-close').on('click', function(e) {
-     e.preventDefault();
-     var target = $(this).data('target');
-     $(target).fadeOut();
-   });  
- });

@@ -47,7 +47,7 @@
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script defer src="../static/libs/swiper.js"></script>
+  <script defer src="../static/libs/modal.js"></script>
   <script defer src="../common/libs/script.js"></script>
   <!-- Googleサムネイル -->
   <meta name="thumbnail" content="https://neko-goutokuji.tokyo/common/images/google-thumbnail.jpg">
@@ -186,7 +186,7 @@
         <div class="manekineko-content__inner inner">
           <div class="manekineko-content__items cards">
             <!-- card -->
-            <a href="" class="cards__item card fadeDownTrigger js-modal-open" data-target=".js-target-modal">
+            <div class="cards__item card fadeDownTrigger js-modal-open">
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img12.webp" type="image/webp">
@@ -203,9 +203,9 @@
                 </div>
                 <h2>招き猫電車ラバーホルダー</h2>
               </div>
-            </a>
+            </div>
             <!-- card -->
-            <a href="" class="cards__item card fadeDownTrigger">
+            <div class="cards__item card fadeDownTrigger js-modal-open">
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img13.webp" type="image/webp">
@@ -217,9 +217,9 @@
               <div class="card__name card__name--white">
                 <h2>豪徳寺招き猫の箸置き</h2>
               </div>
-            </a>
+            </div>
             <!-- card -->
-            <a href="" class="cards__item card fadeDownTrigger">
+            <div class="cards__item card fadeDownTrigger js-modal-open">
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img14.webp" type="image/webp">
@@ -230,9 +230,9 @@
               <div class="card__name card__name--white">
                 <h2>まねきねこどら</h2>
               </div>
-            </a>
+            </div>
             <!-- card -->
-            <a href="" class="cards__item card fadeDownTrigger">
+            <div class="cards__item card fadeDownTrigger js-modal-open">
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img15.webp" type="image/webp">
@@ -245,9 +245,9 @@
                 <h2>エコバッグ（ベルト付）<br>
                   絵馬（観音様・干支）</h2>
               </div>
-            </a>
+            </div>
             <!-- card -->
-            <a href="" class="cards__item card fadeDownTrigger">
+            <div class="cards__item card fadeDownTrigger js-modal-open">
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img16.webp" type="image/webp">
@@ -258,9 +258,9 @@
               <div class="card__name card__name--white">
                 <h2>主張しすぎるもなか</h2>
               </div>
-            </a>
+            </div>
             <!-- card -->
-            <a href="" class="cards__item card fadeDownTrigger">
+            <div class="cards__item card fadeDownTrigger js-modal-open">
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img17.webp" type="image/webp">
@@ -271,9 +271,9 @@
               <div class="card__name card__name--white">
                 <h2>招福もなか</h2>
               </div>
-            </a>
+            </div>
             <!-- card -->
-            <a href="" class="cards__item card fadeDownTrigger">
+            <div class="cards__item card fadeDownTrigger js-modal-open">
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img15.webp" type="image/webp">
@@ -286,9 +286,9 @@
                 <h2>エコバッグ（ベルト付）<br>
                   絵馬（観音様・干支）</h2>
               </div>
-            </a>
+            </div>
             <!-- card -->
-            <a href="" class="cards__item card fadeDownTrigger">
+            <div class="cards__item card fadeDownTrigger js-modal-open">
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img16.webp" type="image/webp">
@@ -299,9 +299,9 @@
               <div class="card__name card__name--white">
                 <h2>主張しすぎるもなか</h2>
               </div>
-            </a>
+            </div>
             <!-- card -->
-            <a href="" class="cards__item card fadeDownTrigger">
+            <div class="cards__item card fadeDownTrigger js-modal-open">
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img17.webp" type="image/webp">
@@ -312,13 +312,13 @@
               <div class="card__name card__name--white">
                 <h2>招福もなか</h2>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- モーダルウインドウ -->
-      <div class="modal js-target-modal">
+      <div class="modal js-modal">
         <div class="modal__inner">
           <div class="modal__content">
             <div class="modal__wrap">
@@ -360,7 +360,7 @@
                 </div>
               </div>
             </div>
-            <div class="modal__close js-modal-close" data-target=".js-target-modal">
+            <div class="modal__close js-modal-close">
               <div class="modal__close-button">
                 <span></span>
                 <span></span>
@@ -369,7 +369,7 @@
           </div>
         </div>
       </div>
-      <div class="modal-overlay js-target-modal js-modal-close" data-target=".js-target-modal"></div>
+      <div class="modal-overlay js-modal js-modal-close"></div>
 
       <div class="pagination pagination--bg">
         <div class="pagination__inner inner">

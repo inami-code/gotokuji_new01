@@ -4,12 +4,14 @@
 # modal
 =========================================================*/
 .modal {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   z-index: 1000;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: visibility .3s, opacity .3s;
 }
 
 .modal__content {
@@ -19,6 +21,7 @@
   padding-left: 11.1rem;
   padding-right: 10rem;
   background-color: $white;
+  box-shadow: 6px 6px 16px 0px rgba(113, 0, 0, 0.84);
   border-radius: 2rem;
   position: relative;
 }
@@ -181,14 +184,20 @@
 }
 
 .modal-overlay {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: $red;
-  opacity: 0.95;
+  background-color: rgba(183, 52, 10, 0.95);
   z-index: 100;
   cursor: pointer;
+}
+
+.modal.js-modal.is-active,
+.modal-overlay.is-active {
+  visibility: visible;
+  opacity: 1;
 }
