@@ -10,16 +10,23 @@
   position: fixed;
   top: 50%;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, -50%);
   transition: visibility .3s, opacity .3s;
 }
 
+.modal__inner {
+  padding: 0 3rem;
+}
+
 .modal__content {
   max-width: 108rem;
+  width: 100%;
+  margin: 0 auto;
   padding-top: 7.3rem;
   padding-bottom: 10.9rem;
-  padding-left: 11.1rem;
-  padding-right: 10rem;
+  padding-left: clamp(2rem, -11.548rem + 19.89vw, 11.1rem);
+  padding-right: clamp(2rem, -10.393rem + 17.49vw, 10rem);
   background-color: $white;
   box-shadow: 6px 6px 16px 0px rgba(113, 0, 0, 0.84);
   border-radius: 2rem;
@@ -30,17 +37,24 @@
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 8rem;
+  gap: clamp(2rem, -6.295rem + 13.11vw, 8rem);
 }
 
 .modal__container {
-  flex: 0 1 38rem;
   position: relative;
+  width: 50%;
 }
 
 .modal__slide {
-  max-width: 38rem;
   width: 100%;
+}
+
+.modal__wrapper {
+  width: inherit;
+}
+
+.modal__img {
+  aspect-ratio: 1 / 1;
 }
 
 .modal__img img {
@@ -75,7 +89,8 @@
 
 
 .modal__info {
-  flex: 0 1 auto;
+  flex: 0 1 50%;
+  word-break: break-all;
 }
 
 .modal__category p {
@@ -127,9 +142,8 @@
 .modal__link a::before {
   position: absolute;
   content: "";
-  top: 50%;
+  top: 0.55rem;
   left: 0;
-  transform: translateY(-50%);
   width: 3.4rem;
   height: 1.5rem;
   mask-image: url(../../manekineko/images/icon_pop.svg);

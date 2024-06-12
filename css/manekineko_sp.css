@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Noto Sans JP", sans-serif;
   color: #000;
@@ -23,6 +24,251 @@ body {
 /*=========================================================
 # content
 =========================================================*/
+.manekineko-content {
+  background-color: #b82e04;
+  padding-top: 6.4rem;
+}
+
 .manekineko-content__inner.inner {
   max-width: 114rem;
+}
+
+/*=========================================================
+# modal
+=========================================================*/
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: visibility 0.3s, opacity 0.3s;
+  transition: visibility 0.3s, opacity 0.3s;
+}
+
+.modal__inner {
+  padding: 0 3.5rem;
+}
+
+.modal__content {
+  max-width: 108rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4.65rem;
+  padding-bottom: 4.9rem;
+  padding-left: 2.45rem;
+  padding-right: 2.25rem;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 6px 16px 0px rgba(113, 0, 0, 0.84);
+          box-shadow: 6px 6px 16px 0px rgba(113, 0, 0, 0.84);
+  border-radius: 2rem;
+  position: relative;
+}
+
+.modal__wrap {
+  display: block;
+  width: 100%;
+}
+
+.modal__container {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.modal__slide {
+  width: 100%;
+}
+
+.modal__wrapper {
+  width: inherit;
+}
+
+.modal__img {
+  aspect-ratio: 1/1;
+}
+
+.modal__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 2rem;
+}
+
+/* ページネーション */
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -25px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+  border: 0.75px solid #b82e04;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b82e04;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 3px;
+}
+
+.modal__info {
+  margin-top: 4.6rem;
+  word-break: break-all;
+}
+
+.modal__category p {
+  color: #a49a74;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+.modal__title {
+  margin-top: 2.2rem;
+}
+
+.modal__title h2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.modal__text {
+  margin-top: 2.5rem;
+}
+
+.modal__text p {
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  line-height: 1.7692307692;
+}
+
+.modal__link {
+  margin-top: 3.5rem;
+}
+
+.modal__link a {
+  display: block;
+  color: #b82e04;
+  font-size: 1.3rem;
+  letter-spacing: 0.05em;
+  line-height: 1.7692307692;
+  padding-left: 2.65rem;
+  position: relative;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.modal__link a:hover {
+  color: #a49a74;
+}
+
+.modal__link a::before {
+  position: absolute;
+  content: "";
+  top: 0.75rem;
+  left: 0;
+  width: 2rem;
+  height: 1.4rem;
+  -webkit-mask-image: url(../../manekineko/images/icon_pop.svg);
+          mask-image: url(../../manekineko/images/icon_pop.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  background-color: #b82e04;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.modal__link a:hover::before {
+  background-color: #a49a74;
+}
+
+.modal__link a:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.modal__close {
+  position: absolute;
+  content: "";
+  top: 5rem;
+  right: 6rem;
+  width: 42px;
+  height: 42px;
+}
+
+.modal__close-button {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  cursor: pointer;
+}
+
+.modal__close-button span {
+  position: absolute;
+  display: block;
+  width: 42px;
+  height: 3.5px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50px;
+  background-color: #b82e04;
+}
+
+.modal__close-button span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal__close-button span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal-overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(183, 52, 10, 0.95);
+  z-index: 100;
+  cursor: pointer;
+}
+
+.modal.js-modal.is-active,
+.modal-overlay.is-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*=========================================================
+# sub-manekineko-content
+=========================================================*/
+.sub-manekineko-content {
+  margin-top: 13.5rem;
+}
+
+/*=========================================================
+# sub-manekineko-breadcrumb
+=========================================================*/
+.sub-manekineko-breadcrumb {
+  margin-top: 3.2rem;
 }/*# sourceMappingURL=manekineko_sp.css.map */

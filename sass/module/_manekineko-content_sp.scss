@@ -1,0 +1,13 @@
+@use "../global" as *;
+
+/*=========================================================
+# content
+=========================================================*/
+.manekineko-content{
+  background-color: $red;
+  padding-top: 6.4rem;
+}
+
+.manekineko-content__inner.inner{
+  max-width: 114rem;
+}
