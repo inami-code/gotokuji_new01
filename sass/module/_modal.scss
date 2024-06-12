@@ -1,0 +1,194 @@
+@use "../global" as *;
+
+/*=========================================================
+# modal
+=========================================================*/
+.modal {
+  display: none;
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal__content {
+  max-width: 108rem;
+  padding-top: 7.3rem;
+  padding-bottom: 10.9rem;
+  padding-left: 11.1rem;
+  padding-right: 10rem;
+  background-color: $white;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.modal__wrap {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8rem;
+}
+
+.modal__container {
+  flex: 0 1 38rem;
+  position: relative;
+}
+
+.modal__slide {
+  max-width: 38rem;
+  width: 100%;
+}
+
+.modal__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 2rem;
+}
+
+/* ページネーション */
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -25px;
+}
+
+.swiper-pagination-bullet {
+  background-color: $white;
+  opacity: 1;
+  border: 0.75px solid $red;
+  width: 10px;
+  height: 10px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $red;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 3px;
+}
+
+
+.modal__info {
+  flex: 0 1 auto;
+}
+
+.modal__category p {
+  color: $gold;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  line-height: calc(24 / 16);
+}
+
+.modal__title {
+  margin-top: 2.2rem;
+}
+
+.modal__title h2 {
+  font-size: 2.4rem;
+  letter-spacing: 0.05em;
+  font-weight: $medium;
+}
+
+.modal__text {
+  margin-top: 2.5rem;
+}
+
+.modal__text p {
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  line-height: calc(24 / 16);
+}
+
+.modal__link {
+  margin-top: 3.5rem;
+}
+
+.modal__link a {
+  display: block;
+  color: $red;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  line-height: calc(24 / 16);
+  padding-left: 4.4rem;
+  position: relative;
+  transition: color .3s;
+}
+
+.modal__link a:hover {
+  color: $gold;
+}
+
+.modal__link a::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 3.4rem;
+  height: 1.5rem;
+  mask-image: url(../../manekineko/images/icon_pop.svg);
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  background-color: $red;
+  transition: background .3s;
+}
+
+.modal__link a:hover::before {
+  background-color: $gold;
+}
+
+.modal__link a:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+.modal__close {
+  position: absolute;
+  content: "";
+  top: 5rem;
+  right: 6rem;
+  width: 42px;
+  height: 42px;
+}
+
+.modal__close-button {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  cursor: pointer;
+}
+
+.modal__close-button span {
+  position: absolute;
+  display: block;
+  width: 42px;
+  height: 3.5px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50px;
+  background-color: $red;
+}
+
+.modal__close-button span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.modal__close-button span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: $red;
+  opacity: 0.95;
+  z-index: 100;
+  cursor: pointer;
+}

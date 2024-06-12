@@ -29,6 +29,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+  <!-- swiper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
   <!-- css -->
   <link rel="stylesheet" href="../css/reset.css?ver=1.0.1">
   <link rel="stylesheet" href="../css/base.css?ver=1.0.1">
@@ -40,6 +46,8 @@
   <link rel="stylesheet" href="../css/manekineko_sp.css?ver=1.0.1" media="all and (max-width:767px)">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="../static/libs/swiper.js"></script>
   <script defer src="../common/libs/script.js"></script>
   <!-- Googleサムネイル -->
   <meta name="thumbnail" content="https://neko-goutokuji.tokyo/common/images/google-thumbnail.jpg">
@@ -118,7 +126,7 @@
       </div>
     </nav>
   </header>
-  
+
   <main>
     <div class="over-wrap">
 
@@ -178,11 +186,12 @@
         <div class="manekineko-content__inner inner">
           <div class="manekineko-content__items cards">
             <!-- card -->
-            <a href="" class="cards__item card fadeDownTrigger">
+            <a href="" class="cards__item card fadeDownTrigger js-modal-open" data-target=".js-target-modal">
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img12.webp" type="image/webp">
-                  <img src="../common/images/article_img12.jpg" alt="招き猫電車ラバーホルダー" width="300" height="300" loading="lazy">
+                  <img src="../common/images/article_img12.jpg" alt="招き猫電車ラバーホルダー" width="300" height="300"
+                    loading="lazy">
                 </picture>
               </div>
               <div class="card__category">ねこ電車世田谷</div>
@@ -227,7 +236,8 @@
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img15.webp" type="image/webp">
-                  <img src="../common/images/article_img15.jpg" alt="エコバッグ（ベルト付） 絵馬（観音様・干支）" width="300" height="300" loading="lazy">
+                  <img src="../common/images/article_img15.jpg" alt="エコバッグ（ベルト付） 絵馬（観音様・干支）" width="300" height="300"
+                    loading="lazy">
                 </picture>
               </div>
               <div class="card__category">豪徳寺</div>
@@ -267,7 +277,8 @@
               <div class="card__img">
                 <picture>
                   <source srcset="../common/images/article_img15.webp" type="image/webp">
-                  <img src="../common/images/article_img15.jpg" alt="エコバッグ（ベルト付） 絵馬（観音様・干支）" width="300" height="300" loading="lazy">
+                  <img src="../common/images/article_img15.jpg" alt="エコバッグ（ベルト付） 絵馬（観音様・干支）" width="300" height="300"
+                    loading="lazy">
                 </picture>
               </div>
               <div class="card__category">豪徳寺</div>
@@ -305,6 +316,60 @@
           </div>
         </div>
       </section>
+
+      <!-- モーダルウインドウ -->
+      <div class="modal js-target-modal">
+        <div class="modal__inner">
+          <div class="modal__content">
+            <div class="modal__wrap">
+              <div class="modal__container">
+                <div class="modal__slide swiper js-modal-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="modal__img swiper-slide">
+                      <picture>
+                        <source srcset="./images/article_pop-img01.webp" type="image/webp">
+                        <img src="./images/article_pop-img01.jpg" alt="豪徳寺招き猫の箸置き" width="380" height="380"
+                          loading="lazy">
+                      </picture>
+                    </div>
+                    <div class="modal__img swiper-slide">
+                      <picture>
+                        <source srcset="./images/article_pop-img02.webp" type="image/webp">
+                        <img src="./images/article_pop-img02.jpg" alt="豪徳寺招き猫の箸置き" width="380" height="380"
+                          loading="lazy">
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="modal__info">
+                <div class="modal__category">
+                  <p>うつわのわ田</p>
+                </div>
+                <div class="modal__title">
+                  <h2>豪徳寺招き猫の箸置き</h2>
+                </div>
+                <div class="modal__text">
+                  <p>世田谷土産に選ばれた豪徳寺名物（名猫）招き猫の箸置きです。大きさも値段も手頃な豪徳寺みやげです。
+                  </p>
+                </div>
+                <div class="modal__link">
+                  <a href="https://utsuwanowada.jp" target="_blank">https://utsuwanowada.jp</a>
+                  <a href="https://utsuwanowada.thebase.in" target="_blank">https://utsuwanowada.thebase.in</a>
+                </div>
+              </div>
+            </div>
+            <div class="modal__close js-modal-close" data-target=".js-target-modal">
+              <div class="modal__close-button">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-overlay js-target-modal js-modal-close" data-target=".js-target-modal"></div>
 
       <div class="pagination pagination--bg">
         <div class="pagination__inner inner">
