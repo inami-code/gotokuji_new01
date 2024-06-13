@@ -60,21 +60,4 @@ $(document).ready(function() {
   $(document).on('click', modalOut);
 });
 
-
-// $(function() {
-//   $('.js-modal-open').on('click', function(e) {
-//     e.preventDefault();
-//     var target = $(this).data('target');
-//     $(target).addClass('modal--visible');
-//     $('.modal-overlay').addClass('modal-overlay--visible');
-//   });  
-
-//   $('.js-modal-close').on('click', function(e) {
-//     e.preventDefault();
-//     var target = $(this).data('target');
-//     $(target).removeClass('modal--visible');
-//     $('.modal-overlay').removeClass('modal-overlay--visible');
-//   });  
-// });
-
 });
