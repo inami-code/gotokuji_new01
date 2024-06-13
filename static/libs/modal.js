@@ -1,63 +1,68 @@
 "use strict";
 
 jQuery(function ($) {
-// ------------------------------------
-// # swiper 招き猫ページ
-// ------------------------------------
+  // ------------------------------------
+  // # swiper 招き猫ページ
+  // ------------------------------------
 
-const swiper01 = new Swiper(".js-modal-swiper", {
-  loop: true,
-  speed: 1500, //スライドの速度
-  effect: "fade",
-  autoplay: {
-    // 自動再生
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  observer: true,
-  observeParents: true,
-});
+  const swiper01 = new Swiper(".js-modal-swiper", {
+    loop: true,
+    speed: 1500, //スライドの速度
+    effect: "fade",
+    autoplay: {
+      // 自動再生
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    observer: true,
+    observeParents: true,
+  });
+
+  // ------------------------------------
+  // # modal 招き猫ページ
+  // ------------------------------------
 
 
+  $(document).ready(function () {
+    // 要素を取得
+    const $modal = $('.js-modal'),
+      $open = $('.js-modal-open'),
+      $close = $('.js-modal-close'),
+      $overlay = $('.modal-overlay');
 
-// ------------------------------------
-// # modal 招き猫ページ
-// ------------------------------------
+    let isFirstOpen = true;
 
-$(document).ready(function() {
-  // 要素を取得
-  const $modal = $('.js-modal'),
-        $open = $('.js-modal-open'),
-        $close = $('.js-modal-close'),
-        $overlay = $('.modal-overlay');
+    // モーダルを開くときにスライダーをリセット
+    function modalOpen() {
+      $modal.addClass('is-active');
+      $overlay.addClass('is-active');
+      if (isFirstOpen) {
+        swiper01.slideTo(0, 0, false);
+        isFirstOpen = false;
+      }
+      swiper01.autoplay.start();
+    }
+    $open.on('click', modalOpen);
 
-  // 「開くボタン」をクリックしてモーダルを開く
-  function modalOpen() {
-    $modal.addClass('is-active');
-    $overlay.addClass('is-active');
-  }
-  $open.on('click', modalOpen);
-
-  // 「閉じるボタン」をクリックしてモーダルを閉じる
-  function modalClose() {
-    $modal.removeClass('is-active');
-    $overlay.removeClass('is-active');
-  }
-  $close.on('click', modalClose);
-  $overlay.on('click', modalClose);
-
-  // 「モーダルの外側」をクリックしてモーダルを閉じる
-  function modalOut(e) {
-    if ($(e.target).is($modal)) {
+    // モーダルを閉じる
+    function modalClose() {
       $modal.removeClass('is-active');
       $overlay.removeClass('is-active');
     }
-  }
-  $(document).on('click', modalOut);
-});
+    $close.on('click', modalClose);
+    $overlay.on('click', modalClose);
 
+    // モーダルの外側をクリックしてモーダルを閉じる
+    function modalOut(e) {
+      if ($(e.target).is($modal)) {
+        $modal.removeClass('is-active');
+        $overlay.removeClass('is-active');
+      }
+    }
+    $(document).on('click', modalOut);
+  });
 });
