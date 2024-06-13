@@ -3,6 +3,12 @@
 /*=========================================================
 # pagination
 =========================================================*/
+.pagination.pagination--bg{
+  background-color: $red;
+  padding-top: 4.7rem;
+  padding-bottom: 9.85rem;
+}
+
 .pagination__inner.inner {
   max-width: 114rem;
 }
@@ -91,7 +97,7 @@
   color: $white;
 }
 
-.wp-pagenavi .current::before {
+.wp-pagenavi .current::after {
   position: absolute;
   content: "";
   width: 2.9rem;
@@ -103,3 +109,4 @@
   border-radius: 50%;
   z-index: -1;
 }
+

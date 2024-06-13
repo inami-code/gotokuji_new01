@@ -126,15 +126,15 @@ body {
 --------------------------------------------------*/
 .page-fv__manekineko-img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 1190px;
+  top: 49.2%;
+  left: 50.8%;
+  max-width: 97%;
   width: 100%;
-  max-height: 35rem;
+  height: 100%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   aspect-ratio: 1459/1270;
-  padding: 1.85rem 0;
+  padding: 1rem 0;
 }
 
 .page-fv__manekineko-img img {
@@ -229,9 +229,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 0.5rem;
 }
 
@@ -246,6 +243,7 @@ body {
   fill: #000;
   height: 1rem;
   width: 1.4rem;
+  margin-top: 0.5rem;
 }
 
 .card__link {
@@ -259,6 +257,12 @@ body {
 /*=========================================================
 # pagination
 =========================================================*/
+.pagination.pagination--bg {
+  background-color: #b82e04;
+  padding-top: 4.7rem;
+  padding-bottom: 9.85rem;
+}
+
 .pagination__inner.inner {
   max-width: 114rem;
 }
@@ -359,7 +363,7 @@ body {
   color: #fff;
 }
 
-.wp-pagenavi .current::before {
+.wp-pagenavi .current::after {
   position: absolute;
   content: "";
   width: 2.9rem;

@@ -26,7 +26,7 @@ body {
 =========================================================*/
 .manekineko-content {
   background-color: #b82e04;
-  padding-top: 6.4rem;
+  padding-top: 4rem;
 }
 
 .manekineko-content__inner.inner {
@@ -41,17 +41,19 @@ body {
   opacity: 0;
   z-index: 1000;
   position: fixed;
-  top: 50%;
+  top: 48.8%;
   left: 50%;
-  width: 100%;
+  max-width: 100%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 3.5rem;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: visibility 0.3s, opacity 0.3s;
   transition: visibility 0.3s, opacity 0.3s;
-}
-
-.modal__inner {
-  padding: 0 3.5rem;
+  max-height: calc(100vh - 3.5rem);
+  overflow-y: scroll;
 }
 
 .modal__content {
@@ -59,13 +61,13 @@ body {
   width: 100%;
   margin: 0 auto;
   padding-top: 4.65rem;
-  padding-bottom: 4.9rem;
+  padding-bottom: 4.7rem;
   padding-left: 2.45rem;
   padding-right: 2.25rem;
   background-color: #fff;
   -webkit-box-shadow: 6px 6px 16px 0px rgba(113, 0, 0, 0.84);
           box-shadow: 6px 6px 16px 0px rgba(113, 0, 0, 0.84);
-  border-radius: 2rem;
+  border-radius: 1rem;
   position: relative;
 }
 
@@ -76,7 +78,7 @@ body {
 
 .modal__container {
   position: relative;
-  width: 95%;
+  width: 93%;
   margin: 0 auto;
 }
 
@@ -98,20 +100,20 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 
 /* ページネーション */
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: -25px;
+  bottom: -23px;
 }
 
 .swiper-pagination-bullet {
   background-color: #fff;
   opacity: 1;
   border: 0.75px solid #b82e04;
-  width: 10px;
-  height: 10px;
+  width: 9.5px;
+  height: 9.5px;
 }
 
 .swiper-pagination-bullet-active {
@@ -124,8 +126,9 @@ body {
 }
 
 .modal__info {
-  margin-top: 4.6rem;
+  margin-top: 4.4em;
   word-break: break-all;
+  width: 100%;
 }
 
 .modal__category p {
@@ -136,7 +139,7 @@ body {
 }
 
 .modal__title {
-  margin-top: 2.2rem;
+  margin-top: 0.8rem;
 }
 
 .modal__title h2 {
@@ -146,7 +149,7 @@ body {
 }
 
 .modal__text {
-  margin-top: 2.5rem;
+  margin-top: 0.9rem;
 }
 
 .modal__text p {
@@ -156,16 +159,16 @@ body {
 }
 
 .modal__link {
-  margin-top: 3.5rem;
+  margin-top: 2.2rem;
 }
 
 .modal__link a {
   display: block;
   color: #b82e04;
   font-size: 1.3rem;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.045em;
   line-height: 1.7692307692;
-  padding-left: 2.65rem;
+  padding-left: 2.8rem;
   position: relative;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
@@ -178,9 +181,9 @@ body {
 .modal__link a::before {
   position: absolute;
   content: "";
-  top: 0.75rem;
-  left: 0;
-  width: 2rem;
+  top: 0.9rem;
+  left: 0.1rem;
+  width: 2.2rem;
   height: 1.4rem;
   -webkit-mask-image: url(../../manekineko/images/icon_pop.svg);
           mask-image: url(../../manekineko/images/icon_pop.svg);
@@ -198,16 +201,16 @@ body {
 }
 
 .modal__link a:not(:first-child) {
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 
 .modal__close {
   position: absolute;
   content: "";
-  top: 5rem;
-  right: 6rem;
-  width: 42px;
-  height: 42px;
+  top: 1rem;
+  right: 1.1rem;
+  width: 29px;
+  height: 29px;
 }
 
 .modal__close-button {
@@ -220,8 +223,8 @@ body {
 .modal__close-button span {
   position: absolute;
   display: block;
-  width: 42px;
-  height: 3.5px;
+  width: 29px;
+  height: 2px;
   top: 50%;
   left: 0;
   -webkit-transform: translateY(-50%);
@@ -263,12 +266,19 @@ body {
 # sub-manekineko-content
 =========================================================*/
 .sub-manekineko-content {
-  margin-top: 13.5rem;
+  margin-top: 5.4rem;
 }
 
 /*=========================================================
 # sub-manekineko-breadcrumb
 =========================================================*/
 .sub-manekineko-breadcrumb {
-  margin-top: 3.2rem;
+  margin-top: 2.4rem;
+}
+
+/*=========================================================
+# sub-manekineko-footer
+=========================================================*/
+.sub-manekineko-footer {
+  margin-top: 0.8rem;
 }/*# sourceMappingURL=manekineko_sp.css.map */

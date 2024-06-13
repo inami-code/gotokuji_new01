@@ -39,6 +39,8 @@ body {
   text-align: left;
   width: 90%;
   margin: 0 auto;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
 }
 
 /*=========================================================
