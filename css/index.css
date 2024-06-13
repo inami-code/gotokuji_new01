@@ -535,8 +535,8 @@ body {
   background-image: url(../../images/info_circle.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  -webkit-animation: 15s linear infinite rotation1;
-          animation: 15s linear infinite rotation1;
+  -webkit-animation: 30s linear infinite rotation1;
+          animation: 30s linear infinite rotation1;
 }
 
 .info__item01-comment {
@@ -732,8 +732,8 @@ body {
   background-image: url(../../images/info_circle.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-animation: 15s linear infinite rotation1;
-          animation: 15s linear infinite rotation1;
+  -webkit-animation: 30s linear infinite rotation1;
+          animation: 30s linear infinite rotation1;
 }
 
 .info__item03-img img {
