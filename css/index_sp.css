@@ -205,23 +205,6 @@ body {
   border-top-right-radius: 3.2rem;
 }
 
-.area-sec__sns {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  margin-top: 1.95rem;
-}
-
-.area-sec__item.area-sec__item--top01 .area-sec__sns,
-.area-sec__item.area-sec__item--top02 .area-sec__sns {
-  margin-top: 0.65rem;
-}
-
-.area-sec__insta {
-  margin-top: -0.8rem;
-  padding-left: 2rem;
-}
-
 /*=========================================================
 # manekineko
 =========================================================*/
@@ -540,6 +523,20 @@ body {
 }
 
 /*=========================================================
+# sns
+=========================================================*/
+.sns__inner {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.sns__insta {
+  margin-top: -0.8rem;
+  padding-left: 2rem;
+}
+
+/*=========================================================
 # top-description
 =========================================================*/
 .top-description {
@@ -579,4 +576,11 @@ body {
 =========================================================*/
 .top-footer {
   margin-top: 9.1rem;
+}
+
+/*=========================================================
+# top-sns
+=========================================================*/
+.top-sns {
+  margin-top: 6.95rem;
 }/*# sourceMappingURL=index_sp.css.map */

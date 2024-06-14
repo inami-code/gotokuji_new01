@@ -1,0 +1,16 @@
+@use "../global" as *;
+
+/*=========================================================
+# sns
+=========================================================*/
+
+.sns__inner{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.sns__insta {
+  margin-top: -0.8rem;
+  padding-left: 2rem;
+}
