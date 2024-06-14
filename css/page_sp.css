@@ -244,6 +244,9 @@ body {
   height: 1rem;
   width: 1.4rem;
   margin-top: 0.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1.4em;
+          flex: 0 0 1.4em;
 }
 
 .card__link {
