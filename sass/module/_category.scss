@@ -10,7 +10,7 @@
 .category__items {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	gap: clamp(10px,1.6vw,24px);
+	gap: clamp(10px, 1.6vw, 24px);
 }
 
 .category__item {
@@ -28,12 +28,12 @@
 	transition: all .3s;
 }
 
-.category__item:hover{
+.category__item:hover {
 	color: $white;
 	background-color: $gold;
 }
 
-.category__item.is-active{
+.category__item.is-active {
 	color: $white;
 	background-color: $gold;
 }

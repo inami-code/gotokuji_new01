@@ -10,7 +10,7 @@
 }
 
 .area-sec__item.area-sec__item--top01 {
-  margin-top: 29rem;
+  margin-top: 27rem;
 }
 
 .area-sec__item.area-sec__item--top02 {
@@ -106,7 +106,7 @@
   height: 100%;
   object-fit: cover;
   border-top-left-radius: 8rem;
-  
+
 }
 
 .area-sec__right::after {
@@ -121,15 +121,15 @@
   background-repeat: no-repeat;
 }
 
-@keyframes fadeDownAnime{
+@keyframes fadeDownAnime {
   from {
     opacity: 0;
-  transform: translateY(-50px);
+    transform: translateY(-50px);
   }
 
   to {
     opacity: 1;
-  transform: translateY(0);
+    transform: translateY(0);
   }
 }
 

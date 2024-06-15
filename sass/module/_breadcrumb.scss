@@ -5,15 +5,15 @@
 =========================================================*/
 
 .breadcrumb__inner {
-display: flex;
-align-items: center;
-font-size: 1.4rem;
-letter-spacing: 0.05em;
-font-feature-settings: "palt";
-cursor: pointer;
+	display: flex;
+	align-items: center;
+	font-size: 1.4rem;
+	letter-spacing: 0.05em;
+	font-feature-settings: "palt";
+	cursor: pointer;
 }
 
-.breadcrumb__inner span{
+.breadcrumb__inner span {
 	position: relative;
 	display: inline-block;
 	width: 1.7rem;
@@ -21,7 +21,7 @@ cursor: pointer;
 	margin-right: 0.9rem;
 }
 
-.breadcrumb__inner span::before{
+.breadcrumb__inner span::before {
 	position: absolute;
 	content: "";
 	top: 70%;

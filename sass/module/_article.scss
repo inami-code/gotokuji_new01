@@ -76,7 +76,7 @@
   background-color: #f6f6f6;
 }
 
-.article__info dl:last-child{
+.article__info dl:last-child {
   border-bottom: 1px solid #d1d1d1;
 }
 
@@ -107,12 +107,12 @@
   font-feature-settings: "palt";
 }
 
-.article__info dd a{
+.article__info dd a {
   display: block;
   transition: opacity .3s;
 }
 
-.article__info dd a:hover{
+.article__info dd a:hover {
   opacity: 0.7;
 }
 
@@ -126,7 +126,7 @@
 }
 
 .article__map p {
-  font-size: 1.5rem;  
+  font-size: 1.5rem;
   line-height: calc(24 / 15);
   letter-spacing: 0.15em;
   font-feature-settings: "palt";

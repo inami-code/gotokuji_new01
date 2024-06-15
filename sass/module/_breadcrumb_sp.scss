@@ -5,20 +5,20 @@
 =========================================================*/
 
 .breadcrumb__inner {
-display: flex;
-align-items: center;
-font-size: 1.1rem;
-letter-spacing: 0.05em;
+	display: flex;
+	align-items: center;
+	font-size: 1.1rem;
+	letter-spacing: 0.05em;
 }
 
-.breadcrumb__inner span{
+.breadcrumb__inner span {
 	position: relative;
 	display: inline-block;
 	width: 1.4rem;
 	height: 1.3rem;
 }
 
-.breadcrumb__inner span::before{
+.breadcrumb__inner span::before {
 	position: absolute;
 	content: "";
 	top: 70%;

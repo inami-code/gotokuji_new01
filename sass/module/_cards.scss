@@ -3,8 +3,8 @@
 /*=========================================================
 # cards
 =========================================================*/
-.cards{
+.cards {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 7.3rem clamp(30px,6vw,90px);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7.3rem clamp(30px, 6vw, 90px);
 }
